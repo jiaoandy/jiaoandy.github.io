@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>已接入评论功能！</title>
-    <url>/2025/09/07/%E5%B7%B2%E6%8E%A5%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%EF%BC%81/</url>
-    <content><![CDATA[<h1 id="已接入评论功能啦！本站评论功能基于-utterances实现-登录github账号即可发布评论。快留下你宝贵的评论吧！"><a href="#已接入评论功能啦！本站评论功能基于-utterances实现-登录github账号即可发布评论。快留下你宝贵的评论吧！" class="headerlink" title="已接入评论功能啦！本站评论功能基于 utterances实现,登录github账号即可发布评论。快留下你宝贵的评论吧！"></a>已接入评论功能啦！本站评论功能基于 <a href="https://utteranc.es/">utterances</a>实现,登录github账号即可发布评论。快留下你宝贵的评论吧！</h1>]]></content>
-      <categories>
-        <category>公告</category>
-      </categories>
-      <tags>
-        <tag>公告</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>首页</title>
     <url>/2025/09/07/home/</url>
     <content><![CDATA[<p>欢迎来到我的博客，这里会不定时分享一些题解，并存放一些我的生活碎片，谢谢支持！</p>
 <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是谁？<br>一名吉林大学软件工程专业的23级普通学生，致力于提升自己技术水平，将分享不同OJ的题解，机器学习相关内容。<br>有时候也会有一些生活上的分享哦！</p>
 <h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
-<li>邮箱：<a href="mailto:&#106;&#x69;&#97;&#x6f;&#x79;&#99;&#53;&#x35;&#50;&#x33;&#x40;&#x6d;&#x61;&#105;&#x6c;&#115;&#46;&#x6a;&#108;&#x75;&#x2e;&#x65;&#x64;&#117;&#x2e;&#x63;&#x6e;">jiaoyc5523@mails.jlu.edu.cn</a></li>
+<li>邮箱：<a href="mailto:&#x6a;&#x69;&#x61;&#x6f;&#121;&#x63;&#53;&#x35;&#50;&#51;&#x40;&#x6d;&#x61;&#105;&#108;&#115;&#46;&#x6a;&#x6c;&#117;&#x2e;&#101;&#x64;&#x75;&#46;&#99;&#110;">jiaoyc5523@mails.jlu.edu.cn</a></li>
 <li>csdn: <a href="https://blog.csdn.net/2302_76409391?spm=1000.2115.3001.5343">个人主页</a></li>
 <li>QQ: 197566706</li>
 </ul>
@@ -52,6 +41,17 @@ shareBtn.addEventListener('click', () => {
 </script>
 
 ]]></content>
+  </entry>
+  <entry>
+    <title>已接入评论功能！</title>
+    <url>/2025/09/07/%E5%B7%B2%E6%8E%A5%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%EF%BC%81/</url>
+    <content><![CDATA[<h1 id="已接入评论功能啦！本站评论功能基于-utterances实现-登录github账号即可发布评论。快留下你宝贵的评论吧！"><a href="#已接入评论功能啦！本站评论功能基于-utterances实现-登录github账号即可发布评论。快留下你宝贵的评论吧！" class="headerlink" title="已接入评论功能啦！本站评论功能基于 utterances实现,登录github账号即可发布评论。快留下你宝贵的评论吧！"></a>已接入评论功能啦！本站评论功能基于 <a href="https://utteranc.es/">utterances</a>实现,登录github账号即可发布评论。快留下你宝贵的评论吧！</h1>]]></content>
+      <categories>
+        <category>公告</category>
+      </categories>
+      <tags>
+        <tag>公告</tag>
+      </tags>
   </entry>
   <entry>
     <title>算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法</title>
@@ -97,36 +97,6 @@ shareBtn.addEventListener('click', () => {
       </categories>
       <tags>
         <tag>算法训练 - 链表 - 双指针</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法训练|贪心|LeetCode122. 买卖股票的最佳时机 II</title>
-    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E8%B4%AA%E5%BF%83-LeetCode122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-II/</url>
-    <content><![CDATA[<h1 id="LeetCode-122-买卖股票的最佳时机-II"><a href="#LeetCode-122-买卖股票的最佳时机-II" class="headerlink" title="LeetCode 122. 买卖股票的最佳时机 II"></a><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/">LeetCode 122. 买卖股票的最佳时机 II</a></h1><span id="more"></span>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。</p>
-<p>在每一天，你可以决定是否购买和&#x2F;或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。</p>
-<p>返回 你能获得的 最大 利润 。<br>示例 1：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,1,5,3,6,4]</span><br><span class="line">输出：7</span><br><span class="line">解释：在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6 - 3 = 3 。</span><br><span class="line">     总利润为 4 + 3 = 7 。</span><br></pre></td></tr></table></figure>
-<p>示例 2：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [1,2,3,4,5]</span><br><span class="line">输出：4</span><br><span class="line">解释：在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     总利润为 4 。</span><br></pre></td></tr></table></figure>
-<p>示例 3：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,6,4,3,1]</span><br><span class="line">输出：0</span><br><span class="line">解释：在这种情况下, 交易无法获得正利润，所以不参与交易可以获得最大利润，最大利润为 0 。</span><br></pre></td></tr></table></figure>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>这道题的动态规划解法不赘述了，贪心解法属实有一种惊喜的感觉，建议先思考十分钟再看题解，恍然大悟其中奥妙，有种做脑筋急转弯的既视感。</p>
-<p>细致来说，这里的贪心属于分解（分层）思想。这种思想很重要，不管是自顶向下的架构原理还是笔者最近学习的计网结构，分解（分层）思想都是其中不可或缺的一环。这道题中，各位最容易想到的思路就是：一定要找到一个大的值，减去小的，但是又发现并不是最大减最小才会得到最高利润，于是又卡死了。</p>
-<p>实际上，我们可以把大的值减小的值这个思路分解一下。举示例1为例：</p>
-<p>买7出1可不可以？  不可以，因为利润是负值</p>
-<p>买7出5可不可以？  不可以，因为利润是负值</p>
-<p>其中买7出5时，<strong>可以分解</strong>，即买7出1，买1出5</p>
-<p>什么意思呢？第 i 天买入第 j 天卖出，我们完全可以看作第 i 天买入，第 i+1 天卖出，再买入，第 i+2 天卖出……</p>
-<p>那么我们就可以建一个数组，保存后一天减前一天所得的钱，然后从中进行舍弃负值</p>
-<p>比如示例1，可以建立数组：-6  4  -7  3  -2</p>
-<p>最大利润就是4+3&#x3D;7</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProfit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; prices)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; prices.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            result += <span class="built_in">max</span>(prices[i] - prices[i - <span class="number">1</span>], <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>算法训练 - 贪心</tag>
       </tags>
   </entry>
   <entry>
@@ -228,6 +198,36 @@ shareBtn.addEventListener('click', () => {
       </categories>
       <tags>
         <tag>算法训练 - 离散化 - 前缀和</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法训练|贪心|LeetCode122. 买卖股票的最佳时机 II</title>
+    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E8%B4%AA%E5%BF%83-LeetCode122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-II/</url>
+    <content><![CDATA[<h1 id="LeetCode-122-买卖股票的最佳时机-II"><a href="#LeetCode-122-买卖股票的最佳时机-II" class="headerlink" title="LeetCode 122. 买卖股票的最佳时机 II"></a><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/">LeetCode 122. 买卖股票的最佳时机 II</a></h1><span id="more"></span>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。</p>
+<p>在每一天，你可以决定是否购买和&#x2F;或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。</p>
+<p>返回 你能获得的 最大 利润 。<br>示例 1：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,1,5,3,6,4]</span><br><span class="line">输出：7</span><br><span class="line">解释：在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6 - 3 = 3 。</span><br><span class="line">     总利润为 4 + 3 = 7 。</span><br></pre></td></tr></table></figure>
+<p>示例 2：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [1,2,3,4,5]</span><br><span class="line">输出：4</span><br><span class="line">解释：在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     总利润为 4 。</span><br></pre></td></tr></table></figure>
+<p>示例 3：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,6,4,3,1]</span><br><span class="line">输出：0</span><br><span class="line">解释：在这种情况下, 交易无法获得正利润，所以不参与交易可以获得最大利润，最大利润为 0 。</span><br></pre></td></tr></table></figure>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>这道题的动态规划解法不赘述了，贪心解法属实有一种惊喜的感觉，建议先思考十分钟再看题解，恍然大悟其中奥妙，有种做脑筋急转弯的既视感。</p>
+<p>细致来说，这里的贪心属于分解（分层）思想。这种思想很重要，不管是自顶向下的架构原理还是笔者最近学习的计网结构，分解（分层）思想都是其中不可或缺的一环。这道题中，各位最容易想到的思路就是：一定要找到一个大的值，减去小的，但是又发现并不是最大减最小才会得到最高利润，于是又卡死了。</p>
+<p>实际上，我们可以把大的值减小的值这个思路分解一下。举示例1为例：</p>
+<p>买7出1可不可以？  不可以，因为利润是负值</p>
+<p>买7出5可不可以？  不可以，因为利润是负值</p>
+<p>其中买7出5时，<strong>可以分解</strong>，即买7出1，买1出5</p>
+<p>什么意思呢？第 i 天买入第 j 天卖出，我们完全可以看作第 i 天买入，第 i+1 天卖出，再买入，第 i+2 天卖出……</p>
+<p>那么我们就可以建一个数组，保存后一天减前一天所得的钱，然后从中进行舍弃负值</p>
+<p>比如示例1，可以建立数组：-6  4  -7  3  -2</p>
+<p>最大利润就是4+3&#x3D;7</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProfit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; prices)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; prices.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            result += <span class="built_in">max</span>(prices[i] - prices[i - <span class="number">1</span>], <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>算法训练 - 贪心</tag>
       </tags>
   </entry>
 </search>
