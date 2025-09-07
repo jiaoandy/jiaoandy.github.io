@@ -1,48 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>首页</title>
-    <url>/2025/09/07/home/</url>
-    <content><![CDATA[<p>欢迎来到我的博客，这里会不定时分享一些题解，并存放一些我的生活碎片，谢谢支持！</p>
-<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是谁？<br>一名吉林大学软件工程专业的23级普通学生，致力于提升自己技术水平，将分享不同OJ的题解，机器学习相关内容。<br>有时候也会有一些生活上的分享哦！</p>
-<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
-<li>邮箱：<a href="mailto:&#x6a;&#105;&#x61;&#x6f;&#x79;&#99;&#53;&#x35;&#x32;&#x33;&#x40;&#109;&#97;&#x69;&#x6c;&#115;&#46;&#x6a;&#108;&#117;&#46;&#101;&#x64;&#x75;&#x2e;&#x63;&#110;">jiaoyc5523@mails.jlu.edu.cn</a></li>
-<li>csdn: <a href="https://blog.csdn.net/2302_76409391?spm=1000.2115.3001.5343">个人主页</a></li>
-<li>QQ: 197566706</li>
-</ul>
-<h6 id="如果你乐意分享这篇内容，我会非常感谢！"><a href="#如果你乐意分享这篇内容，我会非常感谢！" class="headerlink" title="如果你乐意分享这篇内容，我会非常感谢！"></a>如果你乐意<span class="share" style="color: #165DFF; cursor: pointer; text-decoration: underline; margin: 0 4px;">分享</span>这篇内容，我会非常感谢！</h6><!-- 弹窗元素 -->
-<div id="copyPopup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); color: white; padding: 12px 24px; border-radius: 6px; opacity: 0; transition: opacity 0.3s ease-in-out; pointer-events: none; font-size: 14px; z-index: 9999;">
-  已复制到剪贴板
-</div>
-
-<script>
-// 设置要复制的链接
-const shareLink = 'https://jiaoandy.github.io/';
-
-// 获取元素
-const shareBtn = document.querySelector('.share');
-const popup = document.getElementById('copyPopup');
-
-// 点击事件处理
-shareBtn.addEventListener('click', () => {
-  // 复制链接到剪贴板
-  navigator.clipboard.writeText(shareLink).then(() => {
-    // 显示弹窗
-    popup.style.opacity = '1';
-    
-    // 2秒后隐藏弹窗
-    setTimeout(() => {
-      popup.style.opacity = '0';
-    }, 1000);
-  }).catch(err => {
-    console.error('复制失败:', err);
-  });
-});
-</script>
-
-]]></content>
-  </entry>
-  <entry>
     <title>算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法</title>
     <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-Day3-LeetCode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-II%EF%BC%88Floyd%E5%88%A4%E5%9C%88%EF%BC%89-%E8%83%BD%E5%90%A6%E7%94%A8%E7%B3%BB%E6%95%B0k%E8%87%AA%E9%80%82%E5%BA%94%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E5%B7%AE%E5%80%BC-Brent%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="LeetCode-142-环形链表-II"><a href="#LeetCode-142-环形链表-II" class="headerlink" title="LeetCode 142.环形链表 II"></a><a href="https://leetcode.cn/problems/linked-list-cycle-ii/description/">LeetCode 142.环形链表 II</a></h1><span id="more"></span>
@@ -100,70 +58,6 @@ shareBtn.addEventListener('click', () => {
       </categories>
       <tags>
         <tag>公告</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法训练|离散化|区间和（前缀和）</title>
-    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E7%A6%BB%E6%95%A3%E5%8C%96-%E5%8C%BA%E9%97%B4%E5%92%8C%EF%BC%88%E5%89%8D%E7%BC%80%E5%92%8C%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="题目：区间和"><a href="#题目：区间和" class="headerlink" title="题目：区间和"></a>题目：区间和</h1><p>原题链接：<a href="https://www.acwing.com/file_system/file/content/whole/index/content/4330/">802. 区间和 - AcWing题库</a> </p>
-<span id="more"></span>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>假定有一个无限长的数轴，数轴上每个坐标上的数都是 0。</p>
-<p>现在，我们首先进行 n 次操作，每次操作将某一位置 x 上的数加 c。</p>
-<p>接下来，进行 m 次询问，每个询问包含两个整数 l 和 r，你需要求出在区间 [l,r] 之间的所有数的和。</p>
-<p>输入格式<br>第一行包含两个整数 n 和 m。</p>
-<p>接下来 n 行，每行包含两个整数 x 和 c。</p>
-<p>再接下来 m 行，每行包含两个整数 l 和 r。</p>
-<p>输出格式<br>共 m 行，每行输出一个询问中所求的区间内数字和。</p>
-<p>数据范围<br>−109≤x≤109,<br>1≤n,m≤105,<br>−109≤l≤r≤109,<br>−10000≤c≤10000<br>输入样例：<br>3 3<br>1 2<br>3 6<br>7 5<br>1 3<br>4 6<br>7 8<br>输出样例：<br>8<br>0<br>5</p>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>首先插入数据，不赘述了，一层循环插入即可。</p>
-<p>接下来进行查询求和输出操作。</p>
-<h4 id="分为两步"><a href="#分为两步" class="headerlink" title="分为两步"></a>分为两步</h4><h5 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h5><p>我们需要在无限长的数轴上查询到 l 和 r 两个数，此时可以用到二分查找的方式。</p>
-<p>但是我们发现一个问题，数轴是无限长度，我们不可能开出一个极大的数组来进行二分，太耗费空间和时间了。因此我们引出了另一个知识点：<strong>离散化</strong></p>
-<h4 id="什么是离散化"><a href="#什么是离散化" class="headerlink" title="什么是离散化"></a>什么是离散化</h4><p>离散化是将一个数列中的元素映射到一个较小范围内的整数的过程。它通过将原始数据中的每个唯一值替换为一个新的整数值，从而减少了数据的范围和复杂度。简单来讲，就是在不改变原有数组相对大小的基础上，将分散开的数整合到一个相对较小的数组中。这道题中，我们需要将无限长的数组里面后插入的数离散化，以便于查找目标区间的左右边界。（映射）</p>
-<h4 id="离散化的步骤"><a href="#离散化的步骤" class="headerlink" title="离散化的步骤"></a>离散化的步骤</h4><p>首先开一个数组（容器），把输入的数写进去，然后再遍历一下里面的数，把数和对应的新下标存入一个新数组（容器）中。可以通过a[n]&#x3D;m(n是新下标，m是数)来存入离散化后的新数组；也可以用容器。这里为了方便遍历，我们开一个vector</p>
-<p>现在开始离散化</p>
-<p>先给出一开始输入数据时的代码：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//typedef pair&lt;int, int&gt; PII;//第一个int下标，第二个int存数</span></span><br><span class="line"><span class="comment">//vector&lt;int&gt; alls;</span></span><br><span class="line"><span class="comment">//vector&lt;PII&gt;	add；</span></span><br><span class="line">cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)<span class="comment">//读取插入操作</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> x, c;</span><br><span class="line">	cin &gt;&gt; x &gt;&gt; c;</span><br><span class="line">	add.<span class="built_in">push_back</span>(&#123; x,c &#125;);</span><br><span class="line"> </span><br><span class="line">	alls.<span class="built_in">push_back</span>(x);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)<span class="comment">//读取查询操作</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> l, r;</span><br><span class="line">		</span><br><span class="line">	cin &gt;&gt; l &gt;&gt; r;</span><br><span class="line"> </span><br><span class="line">	alls.<span class="built_in">push_back</span>(l);</span><br><span class="line">	alls.<span class="built_in">push_back</span>(r);</span><br><span class="line">		</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>此时all里面是所有出现过的位置（包括插入数在数轴上的坐标和想要查询的区间的左右边界坐标）</p>
-<p>比如，输入如下：</p>
-<p>2 1    &#x2F;&#x2F; n&#x3D;2次操作, m&#x3D;1次查询<br>1 5    &#x2F;&#x2F; 位置1加5<br>3 7    &#x2F;&#x2F; 位置3加7<br>1 3    &#x2F;&#x2F; 查询[1,3]的和</p>
-<p>那么此时all:[1,3,1,3]</p>
-<p>现在如果想要开始离散化，我们会发现一个问题，当我想要找“1”这个坐标在all里面的位置时，会出现两个返回值，并且如果数据很大，无序的all没有办法进行二分查找。因此我们需要给all进行排序和去重操作。</p>
-<p>先讲一下为什么要找“1”在all里面的位置。当我们在给数据进行离散化的时候，步骤是这样的：</p>
-<p><strong>1.建立一个数据类型为整数有序对的vector容器，把插入数据的位置和数值分别放入这个有序对中</strong></p>
-<p><strong>2.再建立一个离散化后的目标数组，把插入数据的位置依次安在这个目标数组中，比如之前的例子，第一个位置“1”映射0，第二个位置“3”映射1</strong></p>
-<p>因此，我们必须把原始位置排好序并查找，以便于直接安在后定义的离散化后的目标数组中（下标依次加一）</p>
-<p>好，现在开始排序去重：</p>
-<p>在vector里面右两个函数，erase和unique。</p>
-<p>A.erase(A.begin,A.end)表示删掉从begin位置到end位置的数。</p>
-<p>A.unique(A.begin,A.end)返回去重后最后一个不重复元素的下标。</p>
-<p>排序去重代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sort</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>());</span><br><span class="line">alls.<span class="built_in">erase</span>(<span class="built_in">unique</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>()), alls.<span class="built_in">end</span>());<span class="comment">//去重</span></span><br></pre></td></tr></table></figure>
-<p>这样all里面的值就是[1,3]。</p>
-<p>样例数太少，我们换一个例子。假设去重后all：[1,3,5,7,9]</p>
-<p>接下来需要进行映射。</p>
-<p>重新看一下离散化的步骤，需要依次把all的数进行映射，“1”映射到“0”，“3”映射到“1”以此类推。</p>
-<p>写一个find函数，进行二分查找</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span><span class="comment">//二分查找</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> l = <span class="number">0</span>, r = alls.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (l &lt; r)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (alls[mid] &gt;= x) r = mid;</span><br><span class="line">		<span class="keyword">else</span> l = mid + <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> r ;<span class="comment">//这里有个小问题需要注意，下面修改</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>此时向离散化后的目标数组中插入对应数</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> item : add)<span class="comment">//把将要插入的数插进去</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x = <span class="built_in">find</span>(item.first);</span><br><span class="line">		a[x] += item.second;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>x本质上就是all中对应数的下标（原始数下标的下标，你甚至可以理解为二重指针）</strong></p>
-<h3 id="区间和"><a href="#区间和" class="headerlink" title="区间和"></a>区间和</h3><p>简单来说就是新开一个数组，从第一个数到最后一个数分别是前面数的累加，最后在求区间和的时候只需要在新开的数组上进行简单运算就行了。</p>
-<p>这里借用<a href="https://programmercarl.com/kamacoder/0058.%E5%8C%BA%E9%97%B4%E5%92%8C.html#%E6%80%9D%E8%B7%AF">代码随想录的讲解，十分清晰</a></p>
-<p>但是我们发现一个问题，区间和的运算中，第一个下标需要从1开始进行，这样不会出现</p>
-<p>s[find(1)-1] &#x2F;&#x2F; 可能变成s[-1]!   这种尴尬的情况（s是累加后的前缀和数组）</p>
-<p>所以前面的find函数需要改正：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span><span class="comment">//二分查找</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> l = <span class="number">0</span>, r = alls.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (l &lt; r)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (alls[mid] &gt;= x) r = mid;</span><br><span class="line">		<span class="keyword">else</span> l = mid + <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> r + <span class="number">1</span> ;<span class="comment">//返回的是新数组的下标</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>返回值变成r+1</p>
-<p>完整代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; PII;</span><br><span class="line"> </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">300010</span>;</span><br><span class="line"><span class="type">int</span> n, m;</span><br><span class="line"><span class="type">int</span> a[N], s[N];</span><br><span class="line"> </span><br><span class="line">vector&lt;<span class="type">int</span>&gt; alls;<span class="comment">//存入所有需要离散化的数</span></span><br><span class="line">vector&lt;PII&gt;	add, query;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span><span class="comment">//二分查找</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> l = <span class="number">0</span>, r = alls.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (l &lt; r)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (alls[mid] &gt;= x) r = mid;</span><br><span class="line">		<span class="keyword">else</span> l = mid + <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> r + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x, c;</span><br><span class="line">		cin &gt;&gt; x &gt;&gt; c;</span><br><span class="line">		add.<span class="built_in">push_back</span>(&#123; x,c &#125;);</span><br><span class="line"> </span><br><span class="line">		alls.<span class="built_in">push_back</span>(x);</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> l, r;</span><br><span class="line">		</span><br><span class="line">		cin &gt;&gt; l &gt;&gt; r;</span><br><span class="line">		</span><br><span class="line">		query.<span class="built_in">push_back</span>(&#123; l,r &#125;);</span><br><span class="line"> </span><br><span class="line">		alls.<span class="built_in">push_back</span>(l);</span><br><span class="line">		alls.<span class="built_in">push_back</span>(r);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">sort</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>());</span><br><span class="line">	alls.<span class="built_in">erase</span>(<span class="built_in">unique</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>()), alls.<span class="built_in">end</span>());<span class="comment">//去重</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> item : add)<span class="comment">//把将要插入的数插进去</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x = <span class="built_in">find</span>(item.first);</span><br><span class="line">		a[x] += item.second;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="comment">//预处理前缀和</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= alls.<span class="built_in">size</span>(); i++) s[i] += s[i - <span class="number">1</span>] + a[i];</span><br><span class="line"> </span><br><span class="line">	<span class="comment">//处理询问</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> item : query)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> l = <span class="built_in">find</span>(item.first), r = <span class="built_in">find</span>(item.second);</span><br><span class="line">		cout &lt;&lt; s[r] - s[l - <span class="number">1</span>] &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>算法训练</tag>
-        <tag>离散化</tag>
-        <tag>前缀和</tag>
       </tags>
   </entry>
   <entry>
@@ -238,5 +132,111 @@ shareBtn.addEventListener('click', () => {
         <tag>算法训练</tag>
         <tag>贪心</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>算法训练|离散化|区间和（前缀和）</title>
+    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E7%A6%BB%E6%95%A3%E5%8C%96-%E5%8C%BA%E9%97%B4%E5%92%8C%EF%BC%88%E5%89%8D%E7%BC%80%E5%92%8C%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="题目：区间和"><a href="#题目：区间和" class="headerlink" title="题目：区间和"></a>题目：区间和</h1><p>原题链接：<a href="https://www.acwing.com/file_system/file/content/whole/index/content/4330/">802. 区间和 - AcWing题库</a> </p>
+<span id="more"></span>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>假定有一个无限长的数轴，数轴上每个坐标上的数都是 0。</p>
+<p>现在，我们首先进行 n 次操作，每次操作将某一位置 x 上的数加 c。</p>
+<p>接下来，进行 m 次询问，每个询问包含两个整数 l 和 r，你需要求出在区间 [l,r] 之间的所有数的和。</p>
+<p>输入格式<br>第一行包含两个整数 n 和 m。</p>
+<p>接下来 n 行，每行包含两个整数 x 和 c。</p>
+<p>再接下来 m 行，每行包含两个整数 l 和 r。</p>
+<p>输出格式<br>共 m 行，每行输出一个询问中所求的区间内数字和。</p>
+<p>数据范围<br>−109≤x≤109,<br>1≤n,m≤105,<br>−109≤l≤r≤109,<br>−10000≤c≤10000<br>输入样例：<br>3 3<br>1 2<br>3 6<br>7 5<br>1 3<br>4 6<br>7 8<br>输出样例：<br>8<br>0<br>5</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>首先插入数据，不赘述了，一层循环插入即可。</p>
+<p>接下来进行查询求和输出操作。</p>
+<h4 id="分为两步"><a href="#分为两步" class="headerlink" title="分为两步"></a>分为两步</h4><h5 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h5><p>我们需要在无限长的数轴上查询到 l 和 r 两个数，此时可以用到二分查找的方式。</p>
+<p>但是我们发现一个问题，数轴是无限长度，我们不可能开出一个极大的数组来进行二分，太耗费空间和时间了。因此我们引出了另一个知识点：<strong>离散化</strong></p>
+<h4 id="什么是离散化"><a href="#什么是离散化" class="headerlink" title="什么是离散化"></a>什么是离散化</h4><p>离散化是将一个数列中的元素映射到一个较小范围内的整数的过程。它通过将原始数据中的每个唯一值替换为一个新的整数值，从而减少了数据的范围和复杂度。简单来讲，就是在不改变原有数组相对大小的基础上，将分散开的数整合到一个相对较小的数组中。这道题中，我们需要将无限长的数组里面后插入的数离散化，以便于查找目标区间的左右边界。（映射）</p>
+<h4 id="离散化的步骤"><a href="#离散化的步骤" class="headerlink" title="离散化的步骤"></a>离散化的步骤</h4><p>首先开一个数组（容器），把输入的数写进去，然后再遍历一下里面的数，把数和对应的新下标存入一个新数组（容器）中。可以通过a[n]&#x3D;m(n是新下标，m是数)来存入离散化后的新数组；也可以用容器。这里为了方便遍历，我们开一个vector</p>
+<p>现在开始离散化</p>
+<p>先给出一开始输入数据时的代码：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//typedef pair&lt;int, int&gt; PII;//第一个int下标，第二个int存数</span></span><br><span class="line"><span class="comment">//vector&lt;int&gt; alls;</span></span><br><span class="line"><span class="comment">//vector&lt;PII&gt;	add；</span></span><br><span class="line">cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)<span class="comment">//读取插入操作</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> x, c;</span><br><span class="line">	cin &gt;&gt; x &gt;&gt; c;</span><br><span class="line">	add.<span class="built_in">push_back</span>(&#123; x,c &#125;);</span><br><span class="line"> </span><br><span class="line">	alls.<span class="built_in">push_back</span>(x);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)<span class="comment">//读取查询操作</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> l, r;</span><br><span class="line">		</span><br><span class="line">	cin &gt;&gt; l &gt;&gt; r;</span><br><span class="line"> </span><br><span class="line">	alls.<span class="built_in">push_back</span>(l);</span><br><span class="line">	alls.<span class="built_in">push_back</span>(r);</span><br><span class="line">		</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此时all里面是所有出现过的位置（包括插入数在数轴上的坐标和想要查询的区间的左右边界坐标）</p>
+<p>比如，输入如下：</p>
+<p>2 1    &#x2F;&#x2F; n&#x3D;2次操作, m&#x3D;1次查询<br>1 5    &#x2F;&#x2F; 位置1加5<br>3 7    &#x2F;&#x2F; 位置3加7<br>1 3    &#x2F;&#x2F; 查询[1,3]的和</p>
+<p>那么此时all:[1,3,1,3]</p>
+<p>现在如果想要开始离散化，我们会发现一个问题，当我想要找“1”这个坐标在all里面的位置时，会出现两个返回值，并且如果数据很大，无序的all没有办法进行二分查找。因此我们需要给all进行排序和去重操作。</p>
+<p>先讲一下为什么要找“1”在all里面的位置。当我们在给数据进行离散化的时候，步骤是这样的：</p>
+<p><strong>1.建立一个数据类型为整数有序对的vector容器，把插入数据的位置和数值分别放入这个有序对中</strong></p>
+<p><strong>2.再建立一个离散化后的目标数组，把插入数据的位置依次安在这个目标数组中，比如之前的例子，第一个位置“1”映射0，第二个位置“3”映射1</strong></p>
+<p>因此，我们必须把原始位置排好序并查找，以便于直接安在后定义的离散化后的目标数组中（下标依次加一）</p>
+<p>好，现在开始排序去重：</p>
+<p>在vector里面右两个函数，erase和unique。</p>
+<p>A.erase(A.begin,A.end)表示删掉从begin位置到end位置的数。</p>
+<p>A.unique(A.begin,A.end)返回去重后最后一个不重复元素的下标。</p>
+<p>排序去重代码如下：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sort</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>());</span><br><span class="line">alls.<span class="built_in">erase</span>(<span class="built_in">unique</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>()), alls.<span class="built_in">end</span>());<span class="comment">//去重</span></span><br></pre></td></tr></table></figure>
+<p>这样all里面的值就是[1,3]。</p>
+<p>样例数太少，我们换一个例子。假设去重后all：[1,3,5,7,9]</p>
+<p>接下来需要进行映射。</p>
+<p>重新看一下离散化的步骤，需要依次把all的数进行映射，“1”映射到“0”，“3”映射到“1”以此类推。</p>
+<p>写一个find函数，进行二分查找</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span><span class="comment">//二分查找</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> l = <span class="number">0</span>, r = alls.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (l &lt; r)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (alls[mid] &gt;= x) r = mid;</span><br><span class="line">		<span class="keyword">else</span> l = mid + <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> r ;<span class="comment">//这里有个小问题需要注意，下面修改</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此时向离散化后的目标数组中插入对应数</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> item : add)<span class="comment">//把将要插入的数插进去</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x = <span class="built_in">find</span>(item.first);</span><br><span class="line">		a[x] += item.second;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>x本质上就是all中对应数的下标（原始数下标的下标，你甚至可以理解为二重指针）</strong></p>
+<h3 id="区间和"><a href="#区间和" class="headerlink" title="区间和"></a>区间和</h3><p>简单来说就是新开一个数组，从第一个数到最后一个数分别是前面数的累加，最后在求区间和的时候只需要在新开的数组上进行简单运算就行了。</p>
+<p>这里借用<a href="https://programmercarl.com/kamacoder/0058.%E5%8C%BA%E9%97%B4%E5%92%8C.html#%E6%80%9D%E8%B7%AF">代码随想录的讲解，十分清晰</a></p>
+<p>但是我们发现一个问题，区间和的运算中，第一个下标需要从1开始进行，这样不会出现</p>
+<p>s[find(1)-1] &#x2F;&#x2F; 可能变成s[-1]!   这种尴尬的情况（s是累加后的前缀和数组）</p>
+<p>所以前面的find函数需要改正：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span><span class="comment">//二分查找</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> l = <span class="number">0</span>, r = alls.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (l &lt; r)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (alls[mid] &gt;= x) r = mid;</span><br><span class="line">		<span class="keyword">else</span> l = mid + <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> r + <span class="number">1</span> ;<span class="comment">//返回的是新数组的下标</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>返回值变成r+1</p>
+<p>完整代码如下：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; PII;</span><br><span class="line"> </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">300010</span>;</span><br><span class="line"><span class="type">int</span> n, m;</span><br><span class="line"><span class="type">int</span> a[N], s[N];</span><br><span class="line"> </span><br><span class="line">vector&lt;<span class="type">int</span>&gt; alls;<span class="comment">//存入所有需要离散化的数</span></span><br><span class="line">vector&lt;PII&gt;	add, query;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span><span class="comment">//二分查找</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> l = <span class="number">0</span>, r = alls.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (l &lt; r)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (alls[mid] &gt;= x) r = mid;</span><br><span class="line">		<span class="keyword">else</span> l = mid + <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> r + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x, c;</span><br><span class="line">		cin &gt;&gt; x &gt;&gt; c;</span><br><span class="line">		add.<span class="built_in">push_back</span>(&#123; x,c &#125;);</span><br><span class="line"> </span><br><span class="line">		alls.<span class="built_in">push_back</span>(x);</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> l, r;</span><br><span class="line">		</span><br><span class="line">		cin &gt;&gt; l &gt;&gt; r;</span><br><span class="line">		</span><br><span class="line">		query.<span class="built_in">push_back</span>(&#123; l,r &#125;);</span><br><span class="line"> </span><br><span class="line">		alls.<span class="built_in">push_back</span>(l);</span><br><span class="line">		alls.<span class="built_in">push_back</span>(r);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">sort</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>());</span><br><span class="line">	alls.<span class="built_in">erase</span>(<span class="built_in">unique</span>(alls.<span class="built_in">begin</span>(), alls.<span class="built_in">end</span>()), alls.<span class="built_in">end</span>());<span class="comment">//去重</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> item : add)<span class="comment">//把将要插入的数插进去</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x = <span class="built_in">find</span>(item.first);</span><br><span class="line">		a[x] += item.second;</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="comment">//预处理前缀和</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= alls.<span class="built_in">size</span>(); i++) s[i] += s[i - <span class="number">1</span>] + a[i];</span><br><span class="line"> </span><br><span class="line">	<span class="comment">//处理询问</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> item : query)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> l = <span class="built_in">find</span>(item.first), r = <span class="built_in">find</span>(item.second);</span><br><span class="line">		cout &lt;&lt; s[r] - s[l - <span class="number">1</span>] &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>离散化</tag>
+        <tag>前缀和</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>首页</title>
+    <url>/2025/09/07/home/</url>
+    <content><![CDATA[<p>欢迎来到我的博客，这里会不定时分享一些题解，并存放一些我的生活碎片，谢谢支持！</p>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是谁？<br>一名吉林大学软件工程专业的23级普通学生，致力于提升自己技术水平，将分享不同OJ的题解，机器学习相关内容。<br>有时候也会有一些生活上的分享哦！</p>
+<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
+<li>邮箱：<a href="mailto:&#x6a;&#x69;&#x61;&#x6f;&#x79;&#99;&#53;&#x35;&#x32;&#51;&#x40;&#109;&#97;&#x69;&#108;&#115;&#46;&#x6a;&#108;&#x75;&#x2e;&#101;&#x64;&#117;&#x2e;&#x63;&#110;">jiaoyc5523@mails.jlu.edu.cn</a></li>
+<li>csdn: <a href="https://blog.csdn.net/2302_76409391?spm=1000.2115.3001.5343">个人主页</a></li>
+<li>QQ: 197566706</li>
+</ul>
+<h6 id="如果你乐意分享这篇内容，我会非常感谢！"><a href="#如果你乐意分享这篇内容，我会非常感谢！" class="headerlink" title="如果你乐意分享这篇内容，我会非常感谢！"></a>如果你乐意<span class="share" style="color: #165DFF; cursor: pointer; text-decoration: underline; margin: 0 4px;">分享</span>这篇内容，我会非常感谢！</h6><!-- 弹窗元素 -->
+<div id="copyPopup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); color: white; padding: 12px 24px; border-radius: 6px; opacity: 0; transition: opacity 0.3s ease-in-out; pointer-events: none; font-size: 14px; z-index: 9999;">
+  已复制到剪贴板
+</div>
+
+<script>
+// 设置要复制的链接
+const shareLink = 'https://jiaoandy.github.io/';
+
+// 获取元素
+const shareBtn = document.querySelector('.share');
+const popup = document.getElementById('copyPopup');
+
+// 点击事件处理
+shareBtn.addEventListener('click', () => {
+  // 复制链接到剪贴板
+  navigator.clipboard.writeText(shareLink).then(() => {
+    // 显示弹窗
+    popup.style.opacity = '1';
+    
+    // 2秒后隐藏弹窗
+    setTimeout(() => {
+      popup.style.opacity = '0';
+    }, 1000);
+  }).catch(err => {
+    console.error('复制失败:', err);
+  });
+});
+</script>
+
+]]></content>
   </entry>
 </search>
