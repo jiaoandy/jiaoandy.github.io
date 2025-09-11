@@ -268,15 +268,6 @@
     </span>
 </div>
 
-            
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读量：</span>
-      <span id="leancloud-visitors" data-url="2025/09/07/算法训练-贪心-LeetCode122-买卖股票的最佳时机-II/">0</span>
-    </span>
-  
         </div>
       </header>
 
@@ -310,38 +301,6 @@
     
 
     <footer class="post-footer">
-        <!-- 新增：LeanCloud初始化脚本 -->
-
-<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
-<script>
-  AV.init({
-    appId: "opHRL8J0sImvQ1XMXnmc0H93-gzGzoHsz",
-    appKey: "XxVZ7PHYJ75awryvGz9TqXpE",
-    
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const url = document.getElementById('leancloud-visitors').dataset.url;
-    const Query = new AV.Query('Counter');
-    
-    Query.equalTo('url', url).find().then(function(res) {
-      if (res.length > 0) {
-        const counter = res[0];
-        counter.increment('views', 1);
-        counter.save();
-        document.getElementById('leancloud-visitors').textContent = counter.get('views');
-      } else {
-        const newCounter = new AV.Object('Counter');
-        newCounter.set('url', url);
-        newCounter.set('views', 1);
-        newCounter.save().then(function(counter) {
-          document.getElementById('leancloud-visitors').textContent = counter.get('views');
-        });
-      }
-    });
-  });
-</script>
-
           <div class="post-tags">
               <a href="/tags/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83/" rel="tag"># 算法训练</a>
               <a href="/tags/%E8%B4%AA%E5%BF%83/" rel="tag"># 贪心</a>
@@ -358,7 +317,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const likeBtn = document.getElementById('like-btn');
-      const likeKey = 'post_like_' + 'cmff7hkr6000pbwv8c7bu2v0l'; // 用post内置的唯一ID替代md5
+      const likeKey = 'post_like_' + 'cmff7qq7n00144sv818ye7fda'; // 用post内置的唯一ID替代md5
       const savedLike = localStorage.getItem(likeKey);
       
       if (savedLike) {

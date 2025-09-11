@@ -259,15 +259,6 @@
     </span>
 </div>
 
-            
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读量：</span>
-      <span id="leancloud-visitors" data-url="2025/09/08/排序算法/">0</span>
-    </span>
-  
         </div>
       </header>
 
@@ -301,38 +292,6 @@
     
 
     <footer class="post-footer">
-        <!-- 新增：LeanCloud初始化脚本 -->
-
-<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
-<script>
-  AV.init({
-    appId: "opHRL8J0sImvQ1XMXnmc0H93-gzGzoHsz",
-    appKey: "XxVZ7PHYJ75awryvGz9TqXpE",
-    
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const url = document.getElementById('leancloud-visitors').dataset.url;
-    const Query = new AV.Query('Counter');
-    
-    Query.equalTo('url', url).find().then(function(res) {
-      if (res.length > 0) {
-        const counter = res[0];
-        counter.increment('views', 1);
-        counter.save();
-        document.getElementById('leancloud-visitors').textContent = counter.get('views');
-      } else {
-        const newCounter = new AV.Object('Counter');
-        newCounter.set('url', url);
-        newCounter.set('views', 1);
-        newCounter.save().then(function(counter) {
-          document.getElementById('leancloud-visitors').textContent = counter.get('views');
-        });
-      }
-    });
-  });
-</script>
-
         <!-- 新增：点赞按钮 -->
 
   <div class="post-like">
@@ -345,7 +304,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const likeBtn = document.getElementById('like-btn');
-      const likeKey = 'post_like_' + 'cmff7hkqh000dbwv8e1k7dlp5'; // 用post内置的唯一ID替代md5
+      const likeKey = 'post_like_' + 'cmff7qq7900074sv84jm24lsr'; // 用post内置的唯一ID替代md5
       const savedLike = localStorage.getItem(likeKey);
       
       if (savedLike) {
