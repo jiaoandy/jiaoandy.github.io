@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>首页</title>
-    <url>/2025/09/07/home/</url>
-    <content><![CDATA[<p>欢迎来到我的博客，这里会不定时分享一些题解，并存放一些我的生活碎片，谢谢支持！</p>
-<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是谁？<br>一名吉林大学软件工程专业的23级普通学生，致力于提升自己技术水平，将分享不同OJ的题解，机器学习相关内容。<br>有时候也会有一些生活上的分享哦！</p>
-<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
-<li>邮箱：<a href="mailto:&#106;&#105;&#x61;&#111;&#121;&#99;&#53;&#53;&#x32;&#x33;&#x40;&#109;&#97;&#105;&#x6c;&#x73;&#x2e;&#106;&#x6c;&#117;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#x6e;">jiaoyc5523@mails.jlu.edu.cn</a></li>
-<li>csdn: <a href="https://blog.csdn.net/2302_76409391?spm=1000.2115.3001.5343">个人主页</a></li>
-<li>QQ: 197566706</li>
+    <title>已接入评论功能！</title>
+    <url>/2025/09/07/%E5%B7%B2%E6%8E%A5%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%EF%BC%81/</url>
+    <content><![CDATA[<h1 id="已接入评论功能啦！"><a href="#已接入评论功能啦！" class="headerlink" title="已接入评论功能啦！"></a>已接入评论功能啦！</h1><p>本站评论功能基于 <a href="https://utteranc.es/">utterances</a>实现,登录github账号即可发布评论。快留下你宝贵的评论吧！</p>
+]]></content>
+      <categories>
+        <category>公告</category>
+      </categories>
+      <tags>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排序算法</title>
+    <url>/2025/09/08/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>排序算法是计算机科学中用于将一组数据按照特定顺序进行排列的算法。常见的排序算法包括：</p>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><p>快速排序是一种基于分治思想的排序算法，其基本思想是：选择一个基准元素，将数组分为两部分，一部分元素小于基准元素，另一部分元素大于基准元素，然后对这两部分分别进行快速排序。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">quickSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;=r)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;<span class="comment">//如果只有一个元素，直接返回</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> i=l<span class="number">-1</span>,j=r<span class="number">+1</span>,mid=a[(l+r)&gt;&gt;<span class="number">1</span>];<span class="comment">//取中间值作为基准</span></span><br><span class="line">    <span class="keyword">while</span>(i&lt;j)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">do</span> i++;<span class="keyword">while</span>(a[i]&lt;mid);<span class="comment">//从左向右找第一个大于等于mid的数</span></span><br><span class="line">        <span class="keyword">do</span> j--;<span class="keyword">while</span>(a[j]&gt;mid);<span class="comment">//从右向左找第一个小于等于mid的数</span></span><br><span class="line">        <span class="keyword">if</span>(i&lt;j)<span class="built_in">swap</span>(a[i],a[j]);<span class="comment">//交换</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">quickSort</span>(a,l,j);<span class="comment">//递归排序左半部分</span></span><br><span class="line">    <span class="built_in">quickSort</span>(a,j<span class="number">+1</span>,r);<span class="comment">//递归排序右半部分</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><p>归并排序是一种基于分治思想的排序算法，其基本思想是：将待排序数组分成两部分，分别对这两部分进行排序，然后将排序好的两部分合并起来。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">mergeSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;=r)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;<span class="comment">//如果只有一个元素，直接返回</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">mergeSort</span>(a,l,mid);<span class="comment">//递归排序左半部分</span></span><br><span class="line">    <span class="built_in">mergeSort</span>(a,mid<span class="number">+1</span>,r);<span class="comment">//递归排序右半部分</span></span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>,i=l,j=mid<span class="number">+1</span>;<span class="comment">//k表示临时数组的下标，i表示左半部分的下标，j表示右半部分的下标</span></span><br><span class="line">    <span class="type">int</span> tmp[r-l<span class="number">+1</span>];<span class="comment">//临时数组</span></span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid&amp;&amp;j&lt;=r)<span class="comment">//合并</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=a[j])<span class="comment">//如果左半部分的元素小于等于右半部分的元素</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmp[k++]=a[i++];<span class="comment">//将左半部分的元素放入临时数组</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmp[k++]=a[j++];<span class="comment">//将右半部分的元素放入临时数组</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp[k++]=a[i++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=r)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp[k++]=a[j++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=l,j=<span class="number">0</span>;i&lt;=r;i++,j++)</span><br><span class="line">    &#123;</span><br><span class="line">        a[i]=tmp[j];<span class="comment">//将临时数组中的元素放入原数组 </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p>堆排序是一种基于堆数据结构的排序算法，其基本思想是：将待排序数组构建成一个大根堆，然后将堆顶元素与堆底元素交换，堆底元素就是最大值，然后将堆的大小减一，再对堆顶元素进行调整，直到堆的大小为一。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">adjustHeap</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> i,<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp=a[i];<span class="comment">//将当前节点的值暂存</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=i*<span class="number">2</span>;j&lt;=n;j*=<span class="number">2</span>)<span class="comment">//遍历当前节点的子节点</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j&lt;n&amp;&amp;a[j]&lt;a[j<span class="number">+1</span>])j++;<span class="comment">//如果左子节点小于右子节点，指向右子节点</span></span><br><span class="line">        <span class="keyword">if</span>(tmp&gt;=a[j])<span class="keyword">break</span>;<span class="comment">//如果当前节点大于等于子节点，直接跳出循环</span></span><br><span class="line">        a[i]=a[j];<span class="comment">//将子节点的值赋给当前节点</span></span><br><span class="line">        i=j;<span class="comment">//当前节点指向子节点</span></span><br><span class="line">    &#125;</span><br><span class="line">    a[i]=tmp;<span class="comment">//将暂存的值赋给当前节点</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">heapSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=n/<span class="number">2</span>;i&gt;=<span class="number">1</span>;i--)<span class="comment">//从最后一个非叶子节点开始调整</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">adjustHeap</span>(a,i,n);<span class="comment">//调整堆</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=n;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">swap</span>(a[<span class="number">1</span>],a[i]);<span class="comment">//将堆顶元素与堆底元素交换</span></span><br><span class="line">        <span class="built_in">adjustHeap</span>(a,<span class="number">1</span>,i<span class="number">-1</span>);<span class="comment">//调整堆</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>动图如下：<br><img src="https://images2017.cnblogs.com/blog/849589/201710/849589-20171015231308699-356134237.gif" alt="堆排序动图"><br><strong>[图片来源]</strong>(<a href="https://www.cnblogs.com/onepixel/p/7674659.html">https://www.cnblogs.com/onepixel/p/7674659.html</a>)</p>
+<p>###以上三种排序算法的时间复杂度分别为：<br>快速排序：O(nlogn)<br>归并排序：O(nlogn)<br>堆排序：O(nlogn)<br>###空间复杂度分别为：<br>快速排序：O(logn)<br>归并排序：O(n)<br>堆排序：O(1)<br>###稳定性分别为：<br>快速排序：不稳定<br>归并排序：稳定<br>堆排序：不稳定</p>
+<h2 id="典型题目"><a href="#典型题目" class="headerlink" title="典型题目"></a>典型题目</h2><h3 id="快速排序-1"><a href="#快速排序-1" class="headerlink" title="快速排序"></a>快速排序</h3><ul>
+<li><a href="https://leetcode.cn/problems/sort-an-array/">LeetCode 912. 排序数组</a></li>
 </ul>
-<h6 id="如果你乐意分享这篇内容，我会非常感谢！"><a href="#如果你乐意分享这篇内容，我会非常感谢！" class="headerlink" title="如果你乐意分享这篇内容，我会非常感谢！"></a>如果你乐意<span class="share" style="color: #165DFF; cursor: pointer; text-decoration: underline; margin: 0 4px;">分享</span>这篇内容，我会非常感谢！</h6><!-- 弹窗元素 -->
-<div id="copyPopup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); color: white; padding: 12px 24px; border-radius: 6px; opacity: 0; transition: opacity 0.3s ease-in-out; pointer-events: none; font-size: 14px; z-index: 9999;">
-  已复制到剪贴板
-</div>
-
-<script>
-// 设置要复制的链接
-const shareLink = 'https://jiaoandy.github.io/';
-
-// 获取元素
-const shareBtn = document.querySelector('.share');
-const popup = document.getElementById('copyPopup');
-
-// 点击事件处理
-shareBtn.addEventListener('click', () => {
-  // 复制链接到剪贴板
-  navigator.clipboard.writeText(shareLink).then(() => {
-    // 显示弹窗
-    popup.style.opacity = '1';
-    
-    // 2秒后隐藏弹窗
-    setTimeout(() => {
-      popup.style.opacity = '0';
-    }, 1000);
-  }).catch(err => {
-    console.error('复制失败:', err);
-  });
-});
-</script>
-
+<h3 id="归并排序-1"><a href="#归并排序-1" class="headerlink" title="归并排序"></a>归并排序</h3><ul>
+<li><a href="https://leetcode.cn/problems/sort-an-array/">LeetCode 912. 排序数组</a></li>
+</ul>
+<h3 id="堆排序-1"><a href="#堆排序-1" class="headerlink" title="堆排序"></a>堆排序</h3><ul>
+<li><a href="https://leetcode.cn/problems/kth-largest-element-in-an-array/">LeetCode 215. 数组中的第K个最大元素</a></li>
+</ul>
+<h4 id="分享一个大佬的博客，里面详细介绍了十大经典排序算法"><a href="#分享一个大佬的博客，里面详细介绍了十大经典排序算法" class="headerlink" title="分享一个大佬的博客，里面详细介绍了十大经典排序算法"></a>分享一个大佬的博客，里面详细介绍了十大经典排序算法</h4><p><a href="https://www.cnblogs.com/onepixel/p/7674659.html">十大经典排序算法详解</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -54,6 +48,12 @@ shareBtn.addEventListener('click', () => {
 <li><a href="https://leetcode.cn/problems/binary-search/">LeetCode 704. 二分查找</a></li>
 <li><a href="https://www.acwing.com/problem/content/791/">AcWing 789. 数的范围</a></li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>滑动窗口算法</title>
+    <url>/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="滑动窗口算法"><a href="#滑动窗口算法" class="headerlink" title="滑动窗口算法"></a>滑动窗口算法</h1><p>先给一道例题：<a href="/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-LeetCode-209-%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/" title="算法训练|LeetCode 209. 长度最小的子数组">LeetCode-209-长度最小的子数组题解</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -81,127 +81,6 @@ shareBtn.addEventListener('click', () => {
       <tags>
         <tag>算法训练</tag>
         <tag>总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>已接入评论功能！</title>
-    <url>/2025/09/07/%E5%B7%B2%E6%8E%A5%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%EF%BC%81/</url>
-    <content><![CDATA[<h1 id="已接入评论功能啦！"><a href="#已接入评论功能啦！" class="headerlink" title="已接入评论功能啦！"></a>已接入评论功能啦！</h1><p>本站评论功能基于 <a href="https://utteranc.es/">utterances</a>实现,登录github账号即可发布评论。快留下你宝贵的评论吧！</p>
-]]></content>
-      <categories>
-        <category>公告</category>
-      </categories>
-      <tags>
-        <tag>公告</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>滑动窗口算法</title>
-    <url>/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="滑动窗口算法"><a href="#滑动窗口算法" class="headerlink" title="滑动窗口算法"></a>滑动窗口算法</h1><p>先给一道例题：<a href="/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-LeetCode-209-%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/" title="算法训练|LeetCode 209. 长度最小的子数组">LeetCode-209-长度最小的子数组题解</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>排序算法</title>
-    <url>/2025/09/08/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>排序算法是计算机科学中用于将一组数据按照特定顺序进行排列的算法。常见的排序算法包括：</p>
-<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><p>快速排序是一种基于分治思想的排序算法，其基本思想是：选择一个基准元素，将数组分为两部分，一部分元素小于基准元素，另一部分元素大于基准元素，然后对这两部分分别进行快速排序。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">quickSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;=r)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;<span class="comment">//如果只有一个元素，直接返回</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> i=l<span class="number">-1</span>,j=r<span class="number">+1</span>,mid=a[(l+r)&gt;&gt;<span class="number">1</span>];<span class="comment">//取中间值作为基准</span></span><br><span class="line">    <span class="keyword">while</span>(i&lt;j)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">do</span> i++;<span class="keyword">while</span>(a[i]&lt;mid);<span class="comment">//从左向右找第一个大于等于mid的数</span></span><br><span class="line">        <span class="keyword">do</span> j--;<span class="keyword">while</span>(a[j]&gt;mid);<span class="comment">//从右向左找第一个小于等于mid的数</span></span><br><span class="line">        <span class="keyword">if</span>(i&lt;j)<span class="built_in">swap</span>(a[i],a[j]);<span class="comment">//交换</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">quickSort</span>(a,l,j);<span class="comment">//递归排序左半部分</span></span><br><span class="line">    <span class="built_in">quickSort</span>(a,j<span class="number">+1</span>,r);<span class="comment">//递归排序右半部分</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><p>归并排序是一种基于分治思想的排序算法，其基本思想是：将待排序数组分成两部分，分别对这两部分进行排序，然后将排序好的两部分合并起来。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">mergeSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;=r)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;<span class="comment">//如果只有一个元素，直接返回</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">mergeSort</span>(a,l,mid);<span class="comment">//递归排序左半部分</span></span><br><span class="line">    <span class="built_in">mergeSort</span>(a,mid<span class="number">+1</span>,r);<span class="comment">//递归排序右半部分</span></span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>,i=l,j=mid<span class="number">+1</span>;<span class="comment">//k表示临时数组的下标，i表示左半部分的下标，j表示右半部分的下标</span></span><br><span class="line">    <span class="type">int</span> tmp[r-l<span class="number">+1</span>];<span class="comment">//临时数组</span></span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid&amp;&amp;j&lt;=r)<span class="comment">//合并</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=a[j])<span class="comment">//如果左半部分的元素小于等于右半部分的元素</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmp[k++]=a[i++];<span class="comment">//将左半部分的元素放入临时数组</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmp[k++]=a[j++];<span class="comment">//将右半部分的元素放入临时数组</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp[k++]=a[i++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=r)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp[k++]=a[j++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=l,j=<span class="number">0</span>;i&lt;=r;i++,j++)</span><br><span class="line">    &#123;</span><br><span class="line">        a[i]=tmp[j];<span class="comment">//将临时数组中的元素放入原数组 </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p>堆排序是一种基于堆数据结构的排序算法，其基本思想是：将待排序数组构建成一个大根堆，然后将堆顶元素与堆底元素交换，堆底元素就是最大值，然后将堆的大小减一，再对堆顶元素进行调整，直到堆的大小为一。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">adjustHeap</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> i,<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp=a[i];<span class="comment">//将当前节点的值暂存</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=i*<span class="number">2</span>;j&lt;=n;j*=<span class="number">2</span>)<span class="comment">//遍历当前节点的子节点</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j&lt;n&amp;&amp;a[j]&lt;a[j<span class="number">+1</span>])j++;<span class="comment">//如果左子节点小于右子节点，指向右子节点</span></span><br><span class="line">        <span class="keyword">if</span>(tmp&gt;=a[j])<span class="keyword">break</span>;<span class="comment">//如果当前节点大于等于子节点，直接跳出循环</span></span><br><span class="line">        a[i]=a[j];<span class="comment">//将子节点的值赋给当前节点</span></span><br><span class="line">        i=j;<span class="comment">//当前节点指向子节点</span></span><br><span class="line">    &#125;</span><br><span class="line">    a[i]=tmp;<span class="comment">//将暂存的值赋给当前节点</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">heapSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=n/<span class="number">2</span>;i&gt;=<span class="number">1</span>;i--)<span class="comment">//从最后一个非叶子节点开始调整</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">adjustHeap</span>(a,i,n);<span class="comment">//调整堆</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=n;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">swap</span>(a[<span class="number">1</span>],a[i]);<span class="comment">//将堆顶元素与堆底元素交换</span></span><br><span class="line">        <span class="built_in">adjustHeap</span>(a,<span class="number">1</span>,i<span class="number">-1</span>);<span class="comment">//调整堆</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>动图如下：<br><img src="https://images2017.cnblogs.com/blog/849589/201710/849589-20171015231308699-356134237.gif" alt="堆排序动图"><br><strong>[图片来源]</strong>(<a href="https://www.cnblogs.com/onepixel/p/7674659.html">https://www.cnblogs.com/onepixel/p/7674659.html</a>)</p>
-<p>###以上三种排序算法的时间复杂度分别为：<br>快速排序：O(nlogn)<br>归并排序：O(nlogn)<br>堆排序：O(nlogn)<br>###空间复杂度分别为：<br>快速排序：O(logn)<br>归并排序：O(n)<br>堆排序：O(1)<br>###稳定性分别为：<br>快速排序：不稳定<br>归并排序：稳定<br>堆排序：不稳定</p>
-<h2 id="典型题目"><a href="#典型题目" class="headerlink" title="典型题目"></a>典型题目</h2><h3 id="快速排序-1"><a href="#快速排序-1" class="headerlink" title="快速排序"></a>快速排序</h3><ul>
-<li><a href="https://leetcode.cn/problems/sort-an-array/">LeetCode 912. 排序数组</a></li>
-</ul>
-<h3 id="归并排序-1"><a href="#归并排序-1" class="headerlink" title="归并排序"></a>归并排序</h3><ul>
-<li><a href="https://leetcode.cn/problems/sort-an-array/">LeetCode 912. 排序数组</a></li>
-</ul>
-<h3 id="堆排序-1"><a href="#堆排序-1" class="headerlink" title="堆排序"></a>堆排序</h3><ul>
-<li><a href="https://leetcode.cn/problems/kth-largest-element-in-an-array/">LeetCode 215. 数组中的第K个最大元素</a></li>
-</ul>
-<h4 id="分享一个大佬的博客，里面详细介绍了十大经典排序算法"><a href="#分享一个大佬的博客，里面详细介绍了十大经典排序算法" class="headerlink" title="分享一个大佬的博客，里面详细介绍了十大经典排序算法"></a>分享一个大佬的博客，里面详细介绍了十大经典排序算法</h4><p><a href="https://www.cnblogs.com/onepixel/p/7674659.html">十大经典排序算法详解</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>算法训练|贪心|LeetCode122. 买卖股票的最佳时机 II</title>
-    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E8%B4%AA%E5%BF%83-LeetCode122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-II/</url>
-    <content><![CDATA[<h1 id="LeetCode-122-买卖股票的最佳时机-II"><a href="#LeetCode-122-买卖股票的最佳时机-II" class="headerlink" title="LeetCode 122. 买卖股票的最佳时机 II"></a><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/">LeetCode 122. 买卖股票的最佳时机 II</a></h1><span id="more"></span>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。</p>
-<p>在每一天，你可以决定是否购买和&#x2F;或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。</p>
-<p>返回 你能获得的 最大 利润 。<br>示例 1：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,1,5,3,6,4]</span><br><span class="line">输出：7</span><br><span class="line">解释：在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6 - 3 = 3 。</span><br><span class="line">     总利润为 4 + 3 = 7 。</span><br></pre></td></tr></table></figure>
-<p>示例 2：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [1,2,3,4,5]</span><br><span class="line">输出：4</span><br><span class="line">解释：在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     总利润为 4 。</span><br></pre></td></tr></table></figure>
-<p>示例 3：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,6,4,3,1]</span><br><span class="line">输出：0</span><br><span class="line">解释：在这种情况下, 交易无法获得正利润，所以不参与交易可以获得最大利润，最大利润为 0 。</span><br></pre></td></tr></table></figure>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>这道题的动态规划解法不赘述了，贪心解法属实有一种惊喜的感觉，建议先思考十分钟再看题解，恍然大悟其中奥妙，有种做脑筋急转弯的既视感。</p>
-<p>细致来说，这里的贪心属于分解（分层）思想。这种思想很重要，不管是自顶向下的架构原理还是笔者最近学习的计网结构，分解（分层）思想都是其中不可或缺的一环。这道题中，各位最容易想到的思路就是：一定要找到一个大的值，减去小的，但是又发现并不是最大减最小才会得到最高利润，于是又卡死了。</p>
-<p>实际上，我们可以把大的值减小的值这个思路分解一下。举示例1为例：</p>
-<p>买7出1可不可以？  不可以，因为利润是负值</p>
-<p>买7出5可不可以？  不可以，因为利润是负值</p>
-<p>其中买7出5时，<strong>可以分解</strong>，即买7出1，买1出5</p>
-<p>什么意思呢？第 i 天买入第 j 天卖出，我们完全可以看作第 i 天买入，第 i+1 天卖出，再买入，第 i+2 天卖出……</p>
-<p>那么我们就可以建一个数组，保存后一天减前一天所得的钱，然后从中进行舍弃负值</p>
-<p>比如示例1，可以建立数组：-6  4  -7  3  -2</p>
-<p>最大利润就是4+3&#x3D;7</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProfit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; prices)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; prices.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            result += <span class="built_in">max</span>(prices[i] - prices[i - <span class="number">1</span>], <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>算法训练</tag>
-        <tag>贪心</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法</title>
-    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-Day3-LeetCode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-II%EF%BC%88Floyd%E5%88%A4%E5%9C%88%EF%BC%89-%E8%83%BD%E5%90%A6%E7%94%A8%E7%B3%BB%E6%95%B0k%E8%87%AA%E9%80%82%E5%BA%94%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E5%B7%AE%E5%80%BC-Brent%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="LeetCode-142-环形链表-II"><a href="#LeetCode-142-环形链表-II" class="headerlink" title="LeetCode 142.环形链表 II"></a><a href="https://leetcode.cn/problems/linked-list-cycle-ii/description/">LeetCode 142.环形链表 II</a></h1><span id="more"></span>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。</p>
-<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p>
-<p>不允许修改 链表。<br>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" alt="图1"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [3,2,0,-4], pos = 1</span><br><span class="line">输出：返回索引为 1 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第二个节点。</span><br></pre></td></tr></table></figure>
-<p>示例 2：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" alt="图2"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1,2], pos = 0</span><br><span class="line">输出：返回索引为 0 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第一个节点。</span><br></pre></td></tr></table></figure>
-<p>示例 3：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" alt="图3"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1], pos = -1</span><br><span class="line">输出：返回 null</span><br><span class="line">解释：链表中没有环。</span><br></pre></td></tr></table></figure>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>本题分为两步，判断是否有环和寻找环的入口。</p>
-<p>判断是否有环的阶段使用了非常经典的快慢指针方法，设立两个指针fast和slow，fast指针移动两格，slow指针移动一格。当它们相遇则说明有环。</p>
-<p>想象带环链表中的环是操场，其他部分是教学楼到操场的距离，如果甲乙同学同时下楼，v甲&#x3D;2v乙，那么甲乙相遇说明一定有操场，很好理解。</p>
-<p>接着寻找环的入口。</p>
-<p>设表头到环入口距离为a</p>
-<p>环入口到两指针相遇位置距离为b</p>
-<p>环长度为L</p>
-<p>相遇时慢指针走的距离为s(快指针为2s)</p>
-<p>可以得出，a+b&#x3D;s,a+b+kL&#x3D;2s（k为快指针绕环的圈数）</p>
-<p>那么2(a+b)&#x3D;a+b+kL</p>
-<p>a&#x3D;kL-b</p>
-<p>也就是从相遇点走a步相当于绕环k-1圈再走L-b步</p>
-<p>所以可以将一个指针转移回头节点，另一个指针同步从相遇点出发，两指针再相遇的位置就是环的入口。</p>
-<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode* fast=head;</span><br><span class="line">        ListNode* slow=head;</span><br><span class="line">        <span class="keyword">while</span>(fast!=<span class="literal">NULL</span>&amp;&amp;fast-&gt;next!=<span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            fast=fast-&gt;next-&gt;next;</span><br><span class="line">            slow=slow-&gt;next;</span><br><span class="line"> </span><br><span class="line">            <span class="keyword">if</span>(fast==slow)</span><br><span class="line">            &#123;</span><br><span class="line">                ListNode* temp1=fast;</span><br><span class="line">                ListNode* temp2=head;</span><br><span class="line">                <span class="keyword">while</span>(temp1!=temp2)</span><br><span class="line">                &#123;</span><br><span class="line">                    temp1=temp1-&gt;next;</span><br><span class="line">                    temp2=temp2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> temp1;</span><br><span class="line">            &#125;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="为什么快指针是慢指针的2倍速度"><a href="#为什么快指针是慢指针的2倍速度" class="headerlink" title="为什么快指针是慢指针的2倍速度"></a>为什么快指针是慢指针的2倍速度</h2><p>快指针移动两格，慢指针移动一个，这是为什么？能不能三倍速度？能不能定义自适应系数k来改进？</p>
-<p>首先证明快指针走三格，慢指针走一格不可行。举一个例子，首先假设慢指针进入环的时候，快指针与慢指针的距离为D，如果环大小L为4，D为1</p>
-<p>第一次移动：慢指针进 1，快指针进 3，新距离 (1+2)mod  4&#x3D;3(1+2)mod4&#x3D;3。</p>
-<p>第二次移动：慢指针进 1，快指针进 3，新距离 (3+2)mod  4&#x3D;1(3+2)mod4&#x3D;1。</p>
-<p>距离在 1 和 3 间循环，永不相遇。</p>
-<p>由此可见，如果 L 是偶数且 D 是奇数，则距离序列（如 D,D+2,D+4,…mod  LD,D+2,D+4,…modL) 始终为奇数，无法达到 0（偶数），导致指针循环而不相遇。</p>
-<h2 id="设置自适应系数k"><a href="#设置自适应系数k" class="headerlink" title="设置自适应系数k?"></a>设置自适应系数k?</h2><p>由于不知道链表长度，我们没办法安排一个k来进行优化，但是再判断是否有环的阶段，我们可以进行优化。</p>
-<h2 id="Brent判圈"><a href="#Brent判圈" class="headerlink" title="Brent判圈"></a>Brent判圈</h2><p>慢指针：每次移动一步</p>
-<p>快指针：初始步长为step_limit&#x3D;1，每次移动step_limit后，检查是否和慢指针相遇，如果没有相遇，step_limit*&#x3D;2，并将慢指针移动到快指针的位置，直到快指针到达链表尾（无环）或者快慢指针相遇（有环）</p>
-<p>Brent 算法通过动态步长优化了检测效率，特别是在无环或大环链表上性能更优，同时保持了 Floyd 算法的线性时间复杂度。</p>
-<h2 id="完整代码-1"><a href="#完整代码-1" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head==<span class="literal">NULL</span> || head-&gt;next==<span class="literal">NULL</span>) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"> </span><br><span class="line">        </span><br><span class="line">        ListNode* slow = head;</span><br><span class="line">        ListNode* fast = head-&gt;next;</span><br><span class="line">        <span class="type">int</span> step_limit = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> steps = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (fast!=<span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (slow == fast) &#123;</span><br><span class="line">                <span class="comment">// 计算环长度</span></span><br><span class="line">                <span class="type">int</span> cycle_len = <span class="number">1</span>;</span><br><span class="line">                ListNode* scanner = fast-&gt;next;</span><br><span class="line">                <span class="keyword">while</span> (scanner != slow) &#123;</span><br><span class="line">                    scanner = scanner-&gt;next;</span><br><span class="line">                    cycle_len++;</span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">                <span class="comment">// 寻找环入口</span></span><br><span class="line">                ListNode* ptr1 = head;</span><br><span class="line">                ListNode* ptr2 = head;</span><br><span class="line">                <span class="comment">// 先将ptr2移动环长度步数</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; cycle_len; i++) &#123;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">// 两指针同时移动直到相遇</span></span><br><span class="line">                <span class="keyword">while</span> (ptr1 != ptr2) &#123;</span><br><span class="line">                    ptr1 = ptr1-&gt;next;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> ptr1;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (steps == step_limit) &#123;</span><br><span class="line">                slow = fast;</span><br><span class="line">                step_limit *= <span class="number">2</span>;</span><br><span class="line">                steps = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            steps++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;  <span class="comment">// 无环</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>算法训练</tag>
-        <tag>链表</tag>
-        <tag>双指针</tag>
       </tags>
   </entry>
   <entry>
@@ -269,6 +148,96 @@ shareBtn.addEventListener('click', () => {
       </tags>
   </entry>
   <entry>
+    <title>首页</title>
+    <url>/2025/09/07/home/</url>
+    <content><![CDATA[<p>欢迎来到我的博客，这里会不定时分享一些题解，并存放一些我的生活碎片，谢谢支持！</p>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是谁？<br>一名吉林大学软件工程专业的23级普通学生，致力于提升自己技术水平，将分享不同OJ的题解，机器学习相关内容。<br>有时候也会有一些生活上的分享哦！</p>
+<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
+<li>邮箱：<a href="mailto:&#106;&#105;&#x61;&#x6f;&#121;&#99;&#x35;&#53;&#50;&#x33;&#64;&#109;&#97;&#x69;&#108;&#x73;&#x2e;&#106;&#108;&#x75;&#46;&#101;&#x64;&#117;&#46;&#x63;&#110;">jiaoyc5523@mails.jlu.edu.cn</a></li>
+<li>csdn: <a href="https://blog.csdn.net/2302_76409391?spm=1000.2115.3001.5343">个人主页</a></li>
+<li>QQ: 197566706</li>
+</ul>
+<h6 id="如果你乐意分享这篇内容，我会非常感谢！"><a href="#如果你乐意分享这篇内容，我会非常感谢！" class="headerlink" title="如果你乐意分享这篇内容，我会非常感谢！"></a>如果你乐意<span class="share" style="color: #165DFF; cursor: pointer; text-decoration: underline; margin: 0 4px;">分享</span>这篇内容，我会非常感谢！</h6><!-- 弹窗元素 -->
+<div id="copyPopup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); color: white; padding: 12px 24px; border-radius: 6px; opacity: 0; transition: opacity 0.3s ease-in-out; pointer-events: none; font-size: 14px; z-index: 9999;">
+  已复制到剪贴板
+</div>
+
+<script>
+// 设置要复制的链接
+const shareLink = 'https://jiaoandy.github.io/';
+
+// 获取元素
+const shareBtn = document.querySelector('.share');
+const popup = document.getElementById('copyPopup');
+
+// 点击事件处理
+shareBtn.addEventListener('click', () => {
+  // 复制链接到剪贴板
+  navigator.clipboard.writeText(shareLink).then(() => {
+    // 显示弹窗
+    popup.style.opacity = '1';
+    
+    // 2秒后隐藏弹窗
+    setTimeout(() => {
+      popup.style.opacity = '0';
+    }, 1000);
+  }).catch(err => {
+    console.error('复制失败:', err);
+  });
+});
+</script>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法</title>
+    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-Day3-LeetCode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-II%EF%BC%88Floyd%E5%88%A4%E5%9C%88%EF%BC%89-%E8%83%BD%E5%90%A6%E7%94%A8%E7%B3%BB%E6%95%B0k%E8%87%AA%E9%80%82%E5%BA%94%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E5%B7%AE%E5%80%BC-Brent%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="LeetCode-142-环形链表-II"><a href="#LeetCode-142-环形链表-II" class="headerlink" title="LeetCode 142.环形链表 II"></a><a href="https://leetcode.cn/problems/linked-list-cycle-ii/description/">LeetCode 142.环形链表 II</a></h1><span id="more"></span>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。</p>
+<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p>
+<p>不允许修改 链表。<br>示例 1：</p>
+<p><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" alt="图1"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [3,2,0,-4], pos = 1</span><br><span class="line">输出：返回索引为 1 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第二个节点。</span><br></pre></td></tr></table></figure>
+<p>示例 2：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" alt="图2"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1,2], pos = 0</span><br><span class="line">输出：返回索引为 0 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第一个节点。</span><br></pre></td></tr></table></figure>
+<p>示例 3：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" alt="图3"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1], pos = -1</span><br><span class="line">输出：返回 null</span><br><span class="line">解释：链表中没有环。</span><br></pre></td></tr></table></figure>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>本题分为两步，判断是否有环和寻找环的入口。</p>
+<p>判断是否有环的阶段使用了非常经典的快慢指针方法，设立两个指针fast和slow，fast指针移动两格，slow指针移动一格。当它们相遇则说明有环。</p>
+<p>想象带环链表中的环是操场，其他部分是教学楼到操场的距离，如果甲乙同学同时下楼，v甲&#x3D;2v乙，那么甲乙相遇说明一定有操场，很好理解。</p>
+<p>接着寻找环的入口。</p>
+<p>设表头到环入口距离为a</p>
+<p>环入口到两指针相遇位置距离为b</p>
+<p>环长度为L</p>
+<p>相遇时慢指针走的距离为s(快指针为2s)</p>
+<p>可以得出，a+b&#x3D;s,a+b+kL&#x3D;2s（k为快指针绕环的圈数）</p>
+<p>那么2(a+b)&#x3D;a+b+kL</p>
+<p>a&#x3D;kL-b</p>
+<p>也就是从相遇点走a步相当于绕环k-1圈再走L-b步</p>
+<p>所以可以将一个指针转移回头节点，另一个指针同步从相遇点出发，两指针再相遇的位置就是环的入口。</p>
+<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode* fast=head;</span><br><span class="line">        ListNode* slow=head;</span><br><span class="line">        <span class="keyword">while</span>(fast!=<span class="literal">NULL</span>&amp;&amp;fast-&gt;next!=<span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            fast=fast-&gt;next-&gt;next;</span><br><span class="line">            slow=slow-&gt;next;</span><br><span class="line"> </span><br><span class="line">            <span class="keyword">if</span>(fast==slow)</span><br><span class="line">            &#123;</span><br><span class="line">                ListNode* temp1=fast;</span><br><span class="line">                ListNode* temp2=head;</span><br><span class="line">                <span class="keyword">while</span>(temp1!=temp2)</span><br><span class="line">                &#123;</span><br><span class="line">                    temp1=temp1-&gt;next;</span><br><span class="line">                    temp2=temp2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> temp1;</span><br><span class="line">            &#125;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="为什么快指针是慢指针的2倍速度"><a href="#为什么快指针是慢指针的2倍速度" class="headerlink" title="为什么快指针是慢指针的2倍速度"></a>为什么快指针是慢指针的2倍速度</h2><p>快指针移动两格，慢指针移动一个，这是为什么？能不能三倍速度？能不能定义自适应系数k来改进？</p>
+<p>首先证明快指针走三格，慢指针走一格不可行。举一个例子，首先假设慢指针进入环的时候，快指针与慢指针的距离为D，如果环大小L为4，D为1</p>
+<p>第一次移动：慢指针进 1，快指针进 3，新距离 (1+2)mod  4&#x3D;3(1+2)mod4&#x3D;3。</p>
+<p>第二次移动：慢指针进 1，快指针进 3，新距离 (3+2)mod  4&#x3D;1(3+2)mod4&#x3D;1。</p>
+<p>距离在 1 和 3 间循环，永不相遇。</p>
+<p>由此可见，如果 L 是偶数且 D 是奇数，则距离序列（如 D,D+2,D+4,…mod  LD,D+2,D+4,…modL) 始终为奇数，无法达到 0（偶数），导致指针循环而不相遇。</p>
+<h2 id="设置自适应系数k"><a href="#设置自适应系数k" class="headerlink" title="设置自适应系数k?"></a>设置自适应系数k?</h2><p>由于不知道链表长度，我们没办法安排一个k来进行优化，但是再判断是否有环的阶段，我们可以进行优化。</p>
+<h2 id="Brent判圈"><a href="#Brent判圈" class="headerlink" title="Brent判圈"></a>Brent判圈</h2><p>慢指针：每次移动一步</p>
+<p>快指针：初始步长为step_limit&#x3D;1，每次移动step_limit后，检查是否和慢指针相遇，如果没有相遇，step_limit*&#x3D;2，并将慢指针移动到快指针的位置，直到快指针到达链表尾（无环）或者快慢指针相遇（有环）</p>
+<p>Brent 算法通过动态步长优化了检测效率，特别是在无环或大环链表上性能更优，同时保持了 Floyd 算法的线性时间复杂度。</p>
+<h2 id="完整代码-1"><a href="#完整代码-1" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head==<span class="literal">NULL</span> || head-&gt;next==<span class="literal">NULL</span>) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"> </span><br><span class="line">        </span><br><span class="line">        ListNode* slow = head;</span><br><span class="line">        ListNode* fast = head-&gt;next;</span><br><span class="line">        <span class="type">int</span> step_limit = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> steps = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (fast!=<span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (slow == fast) &#123;</span><br><span class="line">                <span class="comment">// 计算环长度</span></span><br><span class="line">                <span class="type">int</span> cycle_len = <span class="number">1</span>;</span><br><span class="line">                ListNode* scanner = fast-&gt;next;</span><br><span class="line">                <span class="keyword">while</span> (scanner != slow) &#123;</span><br><span class="line">                    scanner = scanner-&gt;next;</span><br><span class="line">                    cycle_len++;</span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">                <span class="comment">// 寻找环入口</span></span><br><span class="line">                ListNode* ptr1 = head;</span><br><span class="line">                ListNode* ptr2 = head;</span><br><span class="line">                <span class="comment">// 先将ptr2移动环长度步数</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; cycle_len; i++) &#123;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">// 两指针同时移动直到相遇</span></span><br><span class="line">                <span class="keyword">while</span> (ptr1 != ptr2) &#123;</span><br><span class="line">                    ptr1 = ptr1-&gt;next;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> ptr1;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (steps == step_limit) &#123;</span><br><span class="line">                slow = fast;</span><br><span class="line">                step_limit *= <span class="number">2</span>;</span><br><span class="line">                steps = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            steps++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;  <span class="comment">// 无环</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>链表</tag>
+        <tag>双指针</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法训练|LeetCode 209. 长度最小的子数组</title>
     <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-LeetCode-209-%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h1 id="LeetCode-209-长度最小的子数组"><a href="#LeetCode-209-长度最小的子数组" class="headerlink" title="LeetCode 209.长度最小的子数组"></a><a href="https://leetcode.cn/problems/minimum-size-subarray-sum/description/">LeetCode 209.长度最小的子数组</a></h1><span id="more"></span>
@@ -308,6 +277,37 @@ shareBtn.addEventListener('click', () => {
         <tag>双指针</tag>
         <tag>数组</tag>
         <tag>滑动窗口</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法训练|贪心|LeetCode122. 买卖股票的最佳时机 II</title>
+    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E8%B4%AA%E5%BF%83-LeetCode122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-II/</url>
+    <content><![CDATA[<h1 id="LeetCode-122-买卖股票的最佳时机-II"><a href="#LeetCode-122-买卖股票的最佳时机-II" class="headerlink" title="LeetCode 122. 买卖股票的最佳时机 II"></a><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/">LeetCode 122. 买卖股票的最佳时机 II</a></h1><span id="more"></span>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。</p>
+<p>在每一天，你可以决定是否购买和&#x2F;或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。</p>
+<p>返回 你能获得的 最大 利润 。<br>示例 1：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,1,5,3,6,4]</span><br><span class="line">输出：7</span><br><span class="line">解释：在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6 - 3 = 3 。</span><br><span class="line">     总利润为 4 + 3 = 7 。</span><br></pre></td></tr></table></figure>
+<p>示例 2：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [1,2,3,4,5]</span><br><span class="line">输出：4</span><br><span class="line">解释：在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     总利润为 4 。</span><br></pre></td></tr></table></figure>
+<p>示例 3：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,6,4,3,1]</span><br><span class="line">输出：0</span><br><span class="line">解释：在这种情况下, 交易无法获得正利润，所以不参与交易可以获得最大利润，最大利润为 0 。</span><br></pre></td></tr></table></figure>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>这道题的动态规划解法不赘述了，贪心解法属实有一种惊喜的感觉，建议先思考十分钟再看题解，恍然大悟其中奥妙，有种做脑筋急转弯的既视感。</p>
+<p>细致来说，这里的贪心属于分解（分层）思想。这种思想很重要，不管是自顶向下的架构原理还是笔者最近学习的计网结构，分解（分层）思想都是其中不可或缺的一环。这道题中，各位最容易想到的思路就是：一定要找到一个大的值，减去小的，但是又发现并不是最大减最小才会得到最高利润，于是又卡死了。</p>
+<p>实际上，我们可以把大的值减小的值这个思路分解一下。举示例1为例：</p>
+<p>买7出1可不可以？  不可以，因为利润是负值</p>
+<p>买7出5可不可以？  不可以，因为利润是负值</p>
+<p>其中买7出5时，<strong>可以分解</strong>，即买7出1，买1出5</p>
+<p>什么意思呢？第 i 天买入第 j 天卖出，我们完全可以看作第 i 天买入，第 i+1 天卖出，再买入，第 i+2 天卖出……</p>
+<p>那么我们就可以建一个数组，保存后一天减前一天所得的钱，然后从中进行舍弃负值</p>
+<p>比如示例1，可以建立数组：-6  4  -7  3  -2</p>
+<p>最大利润就是4+3&#x3D;7</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProfit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; prices)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; prices.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            result += <span class="built_in">max</span>(prices[i] - prices[i - <span class="number">1</span>], <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>贪心</tag>
       </tags>
   </entry>
   <entry>
@@ -353,6 +353,11 @@ shareBtn.addEventListener('click', () => {
 <h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>上面的代码中，使用了二维数组dp[i][j]，空间复杂度为O(NV)，时间复杂度为O(NV)。<br>我们可以发现，dp[i][j]只和dp[i-1][j]和dp[i-1][j-v[i]]有关，因此可以使用滚动数组优化空间复杂度，将二维数组优化为一维数组。<br>优化代码如下：</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1010</span>;</span><br><span class="line"><span class="type">int</span> n, m;</span><br><span class="line"><span class="type">int</span> v[N], w[N];</span><br><span class="line"><span class="type">int</span> dp[N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) cin &gt;&gt; v[i] &gt;&gt; w[i];</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)<span class="comment">//枚举物品</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = m; j &gt;= v[i]; j--)<span class="comment">//枚举容量</span></span><br><span class="line">        &#123;</span><br><span class="line">            dp[j] = <span class="built_in">max</span>(dp[j], dp[j-v[i]] + w[i]);<span class="comment">//选择第i件物品</span></span><br><span class="line">        &#125;</span><br><span class="line">    cout &lt;&lt; dp[m] &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>需要注意的是，相较于优化前的代码，优化后对于j的遍历是倒序遍历，这是因为优化前的代码是根据前i-1件物品的状态转移得到第i件物品的状态，而优化后的代码是根据第i件物品的状态转移得到第i+1件物品的状态。如果选择正序遍历，那么在计算第i+1件物品的状态时，会用到第i件物品的状态，而第i件物品的状态在第i次遍历中已经被更新，因此会出错，发生重复。</p>
+<h3 id="01背包典型例题："><a href="#01背包典型例题：" class="headerlink" title="01背包典型例题："></a>01背包典型例题：</h3><ol>
+<li><a href="https://leetcode.cn/problems/partition-equal-subset-sum/">LeetCode 416. 分割等和子集</a></li>
+<li><a href="https://leetcode.cn/problems/last-stone-weight-ii/">LeetCode 1049. 最后一块石头的重量 II</a></li>
+<li><a href="https://leetcode.cn/problems/ones-and-zeroes/">LeetCode 474. 一和零</a></li>
+</ol>
 <h2 id="完全背包问题"><a href="#完全背包问题" class="headerlink" title="完全背包问题"></a>完全背包问题</h2><h3 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h3><p>有 N种物品和一个容量是 V的背包，每种物品都有无限件可用。第 i种物品的体积是 v[i]，价值是 w[i]。</p>
 <p>求解将哪些物品装入背包，可使这些物品的总体积不超过背包容量，且总价值最大。<br>输出最大价值。</p>
 <p>输入格式:<br>第一行两个整数，N，V，用空格隔开，分别表示物品种数和背包容积。接下来有 N行，每行两个整数 vi,wi，用空格隔开，分别表示第 i种物品的体积和价值。</p>

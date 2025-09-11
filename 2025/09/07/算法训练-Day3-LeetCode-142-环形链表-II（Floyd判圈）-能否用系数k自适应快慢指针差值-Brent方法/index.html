@@ -71,6 +71,8 @@
   
 
 
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"opHRL8J0sImvQ1XMXnmc0H93-gzGzoHsz","app_key":"XxVZ7PHYJ75awryvGz9TqXpE","server_url":"","security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js" defer></script>
 
 
 
@@ -262,8 +264,24 @@
     </span>
 
   
+    <span id="/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-Day3-LeetCode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-II%EF%BC%88Floyd%E5%88%A4%E5%9C%88%EF%BC%89-%E8%83%BD%E5%90%A6%E7%94%A8%E7%B3%BB%E6%95%B0k%E8%87%AA%E9%80%82%E5%BA%94%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E5%B7%AE%E5%80%BC-Brent%E6%96%B9%E6%B3%95/" class="post-meta-item leancloud_visitors" data-flag-title="算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
 </div>
 
+            
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读量：</span>
+      <span id="leancloud-visitors" data-url="2025/09/07/算法训练-Day3-LeetCode-142-环形链表-II（Floyd判圈）-能否用系数k自适应快慢指针差值-Brent方法/">0</span>
+    </span>
+  
         </div>
       </header>
 
@@ -313,11 +331,74 @@
     
 
     <footer class="post-footer">
+        <!-- 新增：LeanCloud初始化脚本 -->
+
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script>
+  AV.init({
+    appId: "opHRL8J0sImvQ1XMXnmc0H93-gzGzoHsz",
+    appKey: "XxVZ7PHYJ75awryvGz9TqXpE",
+    
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const url = document.getElementById('leancloud-visitors').dataset.url;
+    const Query = new AV.Query('Counter');
+    
+    Query.equalTo('url', url).find().then(function(res) {
+      if (res.length > 0) {
+        const counter = res[0];
+        counter.increment('views', 1);
+        counter.save();
+        document.getElementById('leancloud-visitors').textContent = counter.get('views');
+      } else {
+        const newCounter = new AV.Object('Counter');
+        newCounter.set('url', url);
+        newCounter.set('views', 1);
+        newCounter.save().then(function(counter) {
+          document.getElementById('leancloud-visitors').textContent = counter.get('views');
+        });
+      }
+    });
+  });
+</script>
+
           <div class="post-tags">
               <a href="/tags/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83/" rel="tag"># 算法训练</a>
               <a href="/tags/%E9%93%BE%E8%A1%A8/" rel="tag"># 链表</a>
               <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag"># 双指针</a>
           </div>
+        <!-- 新增：点赞按钮 -->
+
+  <div class="post-like">
+    <button id="like-btn" class="like-btn">
+      <i class="fa fa-heart-o"></i>
+      <span class="like-count">0</span>
+    </button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const likeBtn = document.getElementById('like-btn');
+      const likeKey = 'post_like_' + 'cmff7dd5l000g8sv8eat42gpc'; // 用post内置的唯一ID替代md5
+      const savedLike = localStorage.getItem(likeKey);
+      
+      if (savedLike) {
+        likeBtn.innerHTML = '<i class="fa fa-heart"></i><span class="like-count">1</span>';
+        likeBtn.classList.add('liked');
+      }
+      
+      likeBtn.addEventListener('click', function() {
+        if (savedLike) return;
+        
+        localStorage.setItem(likeKey, '1');
+        likeBtn.innerHTML = '<i class="fa fa-heart"></i><span class="like-count">1</span>';
+        likeBtn.classList.add('liked');
+      });
+    });
+  </script>
+
+
 
         
 
