@@ -341,7 +341,6 @@
               <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"># 动态规划</a>
               <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
           </div>
-        <!-- 新增：点赞按钮 -->
 
   <div class="post-like">
     <button id="like-btn" class="like-btn">
@@ -351,25 +350,73 @@
   </div>
 
   <script>
+    // 等待页面加载完成
     document.addEventListener('DOMContentLoaded', function() {
-      const likeBtn = document.getElementById('like-btn');
-      const likeKey = 'post_like_' + 'cmff85wl4000iegv8c0x1cc99'; // 用post内置的唯一ID替代md5
-      const savedLike = localStorage.getItem(likeKey);
-      
-      if (savedLike) {
-        likeBtn.innerHTML = '<i class="fa fa-heart"></i><span class="like-count">1</span>';
-        likeBtn.classList.add('liked');
+      // 检查LeanCloud SDK是否加载（如果阅读量已用LeanCloud，这里会自动加载）
+      if (typeof AV === 'undefined') {
+        // 如果未加载，手动引入SDK
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/leancloud-storage@4.12.0/dist/av-min.js';
+        script.onload = initLikeFunction;
+        document.body.appendChild(script);
+      } else {
+        initLikeFunction();
       }
-      
-      likeBtn.addEventListener('click', function() {
-        if (savedLike) return;
-        
-        localStorage.setItem(likeKey, '1');
-        likeBtn.innerHTML = '<i class="fa fa-heart"></i><span class="like-count">1</span>';
-        likeBtn.classList.add('liked');
-      });
+
+      // 初始化点赞功能
+      function initLikeFunction() {
+        // 初始化LeanCloud（使用与阅读量相同的配置）
+        AV.init({
+          appId: "opHRL8J0sImvQ1XMXnmc0H93-gzGzoHsz",
+          appKey: "XxVZ7PHYJ75awryvGz9TqXpE",
+          
+        });
+
+        const likeBtn = document.getElementById('like-btn');
+        const postId = 'cmff9iytc001bygv81b4khb00'; // 用文章唯一ID作为标识
+        const likeKey = 'liked_' + postId; // 本地存储的键名
+        const Like = AV.Object.extend('Like'); // 对应LeanCloud中的Like表
+        const query = new AV.Query('Like');
+
+        // 查询该文章的点赞数据
+        query.equalTo('objectId', postId).find().then(function(results) {
+          let likeObj;
+          // 如果已有记录，更新显示；如果没有，创建新记录
+          if (results.length > 0) {
+            likeObj = results[0];
+            const count = likeObj.get('count') || 0;
+            document.querySelector('.like-count').textContent = count;
+          } else {
+            // 初始化新记录
+            likeObj = new Like();
+            likeObj.set('objectId', postId);
+            likeObj.set('count', 0);
+            likeObj.save();
+          }
+
+          // 检查本地是否已点赞
+          if (localStorage.getItem(likeKey)) {
+            document.querySelector('.fa-heart-o').className = 'fa fa-heart';
+          }
+
+          // 点击点赞按钮事件
+          likeBtn.addEventListener('click', function() {
+            if (localStorage.getItem(likeKey)) return; // 已点赞则不重复操作
+
+            // 更新LeanCloud中的点赞数
+            likeObj.increment('count', 1);
+            likeObj.save().then(function(updatedObj) {
+              const newCount = updatedObj.get('count');
+              document.querySelector('.like-count').textContent = newCount;
+              document.querySelector('.fa-heart-o').className = 'fa fa-heart';
+              localStorage.setItem(likeKey, 'true'); // 本地标记已点赞
+            });
+          });
+        });
+      }
     });
   </script>
+
 
 
 

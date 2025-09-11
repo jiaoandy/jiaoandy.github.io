@@ -30,8 +30,8 @@
 <meta property="article:modified_time" content="2025-09-07T11:45:35.947Z">
 <meta property="article:author" content="Andy Hunter">
 <meta property="article:tag" content="算法训练">
-<meta property="article:tag" content="双指针">
 <meta property="article:tag" content="数组">
+<meta property="article:tag" content="双指针">
 <meta property="article:tag" content="滑动窗口">
 <meta name="twitter:card" content="summary">
 
@@ -314,11 +314,10 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83/" rel="tag"># 算法训练</a>
-              <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag"># 双指针</a>
               <a href="/tags/%E6%95%B0%E7%BB%84/" rel="tag"># 数组</a>
+              <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag"># 双指针</a>
               <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" rel="tag"># 滑动窗口</a>
           </div>
-        <!-- 新增：点赞按钮 -->
 
   <div class="post-like">
     <button id="like-btn" class="like-btn">
@@ -328,25 +327,73 @@
   </div>
 
   <script>
+    // 等待页面加载完成
     document.addEventListener('DOMContentLoaded', function() {
-      const likeBtn = document.getElementById('like-btn');
-      const likeKey = 'post_like_' + 'cmff85wl1000fegv8dt9laqaj'; // 用post内置的唯一ID替代md5
-      const savedLike = localStorage.getItem(likeKey);
-      
-      if (savedLike) {
-        likeBtn.innerHTML = '<i class="fa fa-heart"></i><span class="like-count">1</span>';
-        likeBtn.classList.add('liked');
+      // 检查LeanCloud SDK是否加载（如果阅读量已用LeanCloud，这里会自动加载）
+      if (typeof AV === 'undefined') {
+        // 如果未加载，手动引入SDK
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/leancloud-storage@4.12.0/dist/av-min.js';
+        script.onload = initLikeFunction;
+        document.body.appendChild(script);
+      } else {
+        initLikeFunction();
       }
-      
-      likeBtn.addEventListener('click', function() {
-        if (savedLike) return;
-        
-        localStorage.setItem(likeKey, '1');
-        likeBtn.innerHTML = '<i class="fa fa-heart"></i><span class="like-count">1</span>';
-        likeBtn.classList.add('liked');
-      });
+
+      // 初始化点赞功能
+      function initLikeFunction() {
+        // 初始化LeanCloud（使用与阅读量相同的配置）
+        AV.init({
+          appId: "opHRL8J0sImvQ1XMXnmc0H93-gzGzoHsz",
+          appKey: "XxVZ7PHYJ75awryvGz9TqXpE",
+          
+        });
+
+        const likeBtn = document.getElementById('like-btn');
+        const postId = 'cmff9iysz000aygv8ej7mdf5s'; // 用文章唯一ID作为标识
+        const likeKey = 'liked_' + postId; // 本地存储的键名
+        const Like = AV.Object.extend('Like'); // 对应LeanCloud中的Like表
+        const query = new AV.Query('Like');
+
+        // 查询该文章的点赞数据
+        query.equalTo('objectId', postId).find().then(function(results) {
+          let likeObj;
+          // 如果已有记录，更新显示；如果没有，创建新记录
+          if (results.length > 0) {
+            likeObj = results[0];
+            const count = likeObj.get('count') || 0;
+            document.querySelector('.like-count').textContent = count;
+          } else {
+            // 初始化新记录
+            likeObj = new Like();
+            likeObj.set('objectId', postId);
+            likeObj.set('count', 0);
+            likeObj.save();
+          }
+
+          // 检查本地是否已点赞
+          if (localStorage.getItem(likeKey)) {
+            document.querySelector('.fa-heart-o').className = 'fa fa-heart';
+          }
+
+          // 点击点赞按钮事件
+          likeBtn.addEventListener('click', function() {
+            if (localStorage.getItem(likeKey)) return; // 已点赞则不重复操作
+
+            // 更新LeanCloud中的点赞数
+            likeObj.increment('count', 1);
+            likeObj.save().then(function(updatedObj) {
+              const newCount = updatedObj.get('count');
+              document.querySelector('.like-count').textContent = newCount;
+              document.querySelector('.fa-heart-o').className = 'fa fa-heart';
+              localStorage.setItem(likeKey, 'true'); // 本地标记已点赞
+            });
+          });
+        });
+      }
     });
   </script>
+
 
 
 

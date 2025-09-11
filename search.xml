@@ -6,7 +6,7 @@
     <content><![CDATA[<p>欢迎来到我的博客，这里会不定时分享一些题解，并存放一些我的生活碎片，谢谢支持！</p>
 <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是谁？<br>一名吉林大学软件工程专业的23级普通学生，致力于提升自己技术水平，将分享不同OJ的题解，机器学习相关内容。<br>有时候也会有一些生活上的分享哦！</p>
 <h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
-<li>邮箱：<a href="mailto:&#106;&#105;&#97;&#111;&#x79;&#99;&#x35;&#53;&#x32;&#51;&#64;&#109;&#x61;&#x69;&#x6c;&#x73;&#x2e;&#x6a;&#x6c;&#117;&#46;&#x65;&#x64;&#x75;&#x2e;&#99;&#x6e;">jiaoyc5523@mails.jlu.edu.cn</a></li>
+<li>邮箱：<a href="mailto:&#106;&#x69;&#97;&#x6f;&#x79;&#x63;&#53;&#x35;&#x32;&#51;&#x40;&#x6d;&#x61;&#x69;&#x6c;&#115;&#46;&#x6a;&#x6c;&#117;&#x2e;&#x65;&#x64;&#117;&#46;&#99;&#110;">jiaoyc5523@mails.jlu.edu.cn</a></li>
 <li>csdn: <a href="https://blog.csdn.net/2302_76409391?spm=1000.2115.3001.5343">个人主页</a></li>
 <li>QQ: 197566706</li>
 </ul>
@@ -99,81 +99,6 @@ shareBtn.addEventListener('click', () => {
 ]]></content>
   </entry>
   <entry>
-    <title>算法总结</title>
-    <url>/2025/09/08/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="算法总结"><a href="#算法总结" class="headerlink" title="算法总结"></a>算法总结</h1><h5 id="写在前面的话："><a href="#写在前面的话：" class="headerlink" title="写在前面的话："></a>写在前面的话：</h5><p>本文从2025年9月8日开始，总结自己的算法训练经验，分享自己的算法训练心得。将会持续更新。<br>希望能对大家有所帮助。</p>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>数组是最常用的数据结构之一，掌握数组的基本操作和常见算法是非常重要的。以下是一些常见的数组算法：</p>
-<ol>
-<li><a href="/2025/09/08/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法">排序算法</a>：快速排序、归并排序、堆排序</li>
-<li><a href="/2025/09/08/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/" title="搜索算法">搜索算法</a>：二分搜索</li>
-<li><a href="/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/" title="滑动窗口算法">滑动窗口算法</a>：用于解决子数组或子字符串问题，如最长无重复字符的子串、最小覆盖子串等</li>
-</ol>
-<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><p>链表是一种常见的数据结构，掌握链表的基本操作和常见<br>算法是非常重要的。以下是一些常见的链表算法：<br>……</p>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>字符串是一种常见的数据结构，掌握字符串的基本操作和常见<br>算法是非常重要的。以下是一些常见的字符串算法：<br>……</p>
-<h2 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h2><p>栈和队列是两种常见的数据结构，掌握栈和队列的基本操作和常见<br>算法是非常重要的。以下是一些常见的栈和队列算法：<br>……</p>
-<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树是一种常见的数据结构，掌握树的基本操作和常见<br>算法是非常重要的。以下是一些常见的树算法：<br>……</p>
-<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><p>图是一种常见的数据结构，掌握图的基本操作和常见<br>算法是非常重要的。以下是一些常见的图算法：<br>……</p>
-<h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><ol>
-<li><a href="/2025/09/09/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="背包问题">背包问题</a>：01背包，完全背包，多重背包及其优化，分组背包</li>
-</ol>
-]]></content>
-      <categories>
-        <category>常见算法总结（持续更新）</category>
-      </categories>
-      <tags>
-        <tag>算法训练</tag>
-        <tag>总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法</title>
-    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-Day3-LeetCode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-II%EF%BC%88Floyd%E5%88%A4%E5%9C%88%EF%BC%89-%E8%83%BD%E5%90%A6%E7%94%A8%E7%B3%BB%E6%95%B0k%E8%87%AA%E9%80%82%E5%BA%94%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E5%B7%AE%E5%80%BC-Brent%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="LeetCode-142-环形链表-II"><a href="#LeetCode-142-环形链表-II" class="headerlink" title="LeetCode 142.环形链表 II"></a><a href="https://leetcode.cn/problems/linked-list-cycle-ii/description/">LeetCode 142.环形链表 II</a></h1><span id="more"></span>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。</p>
-<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p>
-<p>不允许修改 链表。<br>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" alt="图1"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [3,2,0,-4], pos = 1</span><br><span class="line">输出：返回索引为 1 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第二个节点。</span><br></pre></td></tr></table></figure>
-<p>示例 2：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" alt="图2"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1,2], pos = 0</span><br><span class="line">输出：返回索引为 0 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第一个节点。</span><br></pre></td></tr></table></figure>
-<p>示例 3：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" alt="图3"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1], pos = -1</span><br><span class="line">输出：返回 null</span><br><span class="line">解释：链表中没有环。</span><br></pre></td></tr></table></figure>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>本题分为两步，判断是否有环和寻找环的入口。</p>
-<p>判断是否有环的阶段使用了非常经典的快慢指针方法，设立两个指针fast和slow，fast指针移动两格，slow指针移动一格。当它们相遇则说明有环。</p>
-<p>想象带环链表中的环是操场，其他部分是教学楼到操场的距离，如果甲乙同学同时下楼，v甲&#x3D;2v乙，那么甲乙相遇说明一定有操场，很好理解。</p>
-<p>接着寻找环的入口。</p>
-<p>设表头到环入口距离为a</p>
-<p>环入口到两指针相遇位置距离为b</p>
-<p>环长度为L</p>
-<p>相遇时慢指针走的距离为s(快指针为2s)</p>
-<p>可以得出，a+b&#x3D;s,a+b+kL&#x3D;2s（k为快指针绕环的圈数）</p>
-<p>那么2(a+b)&#x3D;a+b+kL</p>
-<p>a&#x3D;kL-b</p>
-<p>也就是从相遇点走a步相当于绕环k-1圈再走L-b步</p>
-<p>所以可以将一个指针转移回头节点，另一个指针同步从相遇点出发，两指针再相遇的位置就是环的入口。</p>
-<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode* fast=head;</span><br><span class="line">        ListNode* slow=head;</span><br><span class="line">        <span class="keyword">while</span>(fast!=<span class="literal">NULL</span>&amp;&amp;fast-&gt;next!=<span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            fast=fast-&gt;next-&gt;next;</span><br><span class="line">            slow=slow-&gt;next;</span><br><span class="line"> </span><br><span class="line">            <span class="keyword">if</span>(fast==slow)</span><br><span class="line">            &#123;</span><br><span class="line">                ListNode* temp1=fast;</span><br><span class="line">                ListNode* temp2=head;</span><br><span class="line">                <span class="keyword">while</span>(temp1!=temp2)</span><br><span class="line">                &#123;</span><br><span class="line">                    temp1=temp1-&gt;next;</span><br><span class="line">                    temp2=temp2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> temp1;</span><br><span class="line">            &#125;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="为什么快指针是慢指针的2倍速度"><a href="#为什么快指针是慢指针的2倍速度" class="headerlink" title="为什么快指针是慢指针的2倍速度"></a>为什么快指针是慢指针的2倍速度</h2><p>快指针移动两格，慢指针移动一个，这是为什么？能不能三倍速度？能不能定义自适应系数k来改进？</p>
-<p>首先证明快指针走三格，慢指针走一格不可行。举一个例子，首先假设慢指针进入环的时候，快指针与慢指针的距离为D，如果环大小L为4，D为1</p>
-<p>第一次移动：慢指针进 1，快指针进 3，新距离 (1+2)mod  4&#x3D;3(1+2)mod4&#x3D;3。</p>
-<p>第二次移动：慢指针进 1，快指针进 3，新距离 (3+2)mod  4&#x3D;1(3+2)mod4&#x3D;1。</p>
-<p>距离在 1 和 3 间循环，永不相遇。</p>
-<p>由此可见，如果 L 是偶数且 D 是奇数，则距离序列（如 D,D+2,D+4,…mod  LD,D+2,D+4,…modL) 始终为奇数，无法达到 0（偶数），导致指针循环而不相遇。</p>
-<h2 id="设置自适应系数k"><a href="#设置自适应系数k" class="headerlink" title="设置自适应系数k?"></a>设置自适应系数k?</h2><p>由于不知道链表长度，我们没办法安排一个k来进行优化，但是再判断是否有环的阶段，我们可以进行优化。</p>
-<h2 id="Brent判圈"><a href="#Brent判圈" class="headerlink" title="Brent判圈"></a>Brent判圈</h2><p>慢指针：每次移动一步</p>
-<p>快指针：初始步长为step_limit&#x3D;1，每次移动step_limit后，检查是否和慢指针相遇，如果没有相遇，step_limit*&#x3D;2，并将慢指针移动到快指针的位置，直到快指针到达链表尾（无环）或者快慢指针相遇（有环）</p>
-<p>Brent 算法通过动态步长优化了检测效率，特别是在无环或大环链表上性能更优，同时保持了 Floyd 算法的线性时间复杂度。</p>
-<h2 id="完整代码-1"><a href="#完整代码-1" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head==<span class="literal">NULL</span> || head-&gt;next==<span class="literal">NULL</span>) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"> </span><br><span class="line">        </span><br><span class="line">        ListNode* slow = head;</span><br><span class="line">        ListNode* fast = head-&gt;next;</span><br><span class="line">        <span class="type">int</span> step_limit = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> steps = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (fast!=<span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (slow == fast) &#123;</span><br><span class="line">                <span class="comment">// 计算环长度</span></span><br><span class="line">                <span class="type">int</span> cycle_len = <span class="number">1</span>;</span><br><span class="line">                ListNode* scanner = fast-&gt;next;</span><br><span class="line">                <span class="keyword">while</span> (scanner != slow) &#123;</span><br><span class="line">                    scanner = scanner-&gt;next;</span><br><span class="line">                    cycle_len++;</span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">                <span class="comment">// 寻找环入口</span></span><br><span class="line">                ListNode* ptr1 = head;</span><br><span class="line">                ListNode* ptr2 = head;</span><br><span class="line">                <span class="comment">// 先将ptr2移动环长度步数</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; cycle_len; i++) &#123;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">// 两指针同时移动直到相遇</span></span><br><span class="line">                <span class="keyword">while</span> (ptr1 != ptr2) &#123;</span><br><span class="line">                    ptr1 = ptr1-&gt;next;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> ptr1;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (steps == step_limit) &#123;</span><br><span class="line">                slow = fast;</span><br><span class="line">                step_limit *= <span class="number">2</span>;</span><br><span class="line">                steps = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            steps++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;  <span class="comment">// 无环</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>算法训练</tag>
-        <tag>链表</tag>
-        <tag>双指针</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法训练|LeetCode 209. 长度最小的子数组</title>
     <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-LeetCode-209-%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h1 id="LeetCode-209-长度最小的子数组"><a href="#LeetCode-209-长度最小的子数组" class="headerlink" title="LeetCode 209.长度最小的子数组"></a><a href="https://leetcode.cn/problems/minimum-size-subarray-sum/description/">LeetCode 209.长度最小的子数组</a></h1><span id="more"></span>
@@ -210,9 +135,36 @@ shareBtn.addEventListener('click', () => {
       </categories>
       <tags>
         <tag>算法训练</tag>
-        <tag>双指针</tag>
         <tag>数组</tag>
+        <tag>双指针</tag>
         <tag>滑动窗口</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法总结</title>
+    <url>/2025/09/08/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="算法总结"><a href="#算法总结" class="headerlink" title="算法总结"></a>算法总结</h1><h5 id="写在前面的话："><a href="#写在前面的话：" class="headerlink" title="写在前面的话："></a>写在前面的话：</h5><p>本文从2025年9月8日开始，总结自己的算法训练经验，分享自己的算法训练心得。将会持续更新。<br>希望能对大家有所帮助。</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>数组是最常用的数据结构之一，掌握数组的基本操作和常见算法是非常重要的。以下是一些常见的数组算法：</p>
+<ol>
+<li><a href="/2025/09/08/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法">排序算法</a>：快速排序、归并排序、堆排序</li>
+<li><a href="/2025/09/08/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/" title="搜索算法">搜索算法</a>：二分搜索</li>
+<li><a href="/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/" title="滑动窗口算法">滑动窗口算法</a>：用于解决子数组或子字符串问题，如最长无重复字符的子串、最小覆盖子串等</li>
+</ol>
+<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><p>链表是一种常见的数据结构，掌握链表的基本操作和常见<br>算法是非常重要的。以下是一些常见的链表算法：<br>……</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>字符串是一种常见的数据结构，掌握字符串的基本操作和常见<br>算法是非常重要的。以下是一些常见的字符串算法：<br>……</p>
+<h2 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h2><p>栈和队列是两种常见的数据结构，掌握栈和队列的基本操作和常见<br>算法是非常重要的。以下是一些常见的栈和队列算法：<br>……</p>
+<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树是一种常见的数据结构，掌握树的基本操作和常见<br>算法是非常重要的。以下是一些常见的树算法：<br>……</p>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><p>图是一种常见的数据结构，掌握图的基本操作和常见<br>算法是非常重要的。以下是一些常见的图算法：<br>……</p>
+<h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><ol>
+<li><a href="/2025/09/09/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="背包问题">背包问题</a>：01背包，完全背包，多重背包及其优化，分组背包</li>
+</ol>
+]]></content>
+      <categories>
+        <category>常见算法总结（持续更新）</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>总结</tag>
       </tags>
   </entry>
   <entry>
@@ -280,6 +232,85 @@ shareBtn.addEventListener('click', () => {
       </tags>
   </entry>
   <entry>
+    <title>算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法</title>
+    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-Day3-LeetCode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-II%EF%BC%88Floyd%E5%88%A4%E5%9C%88%EF%BC%89-%E8%83%BD%E5%90%A6%E7%94%A8%E7%B3%BB%E6%95%B0k%E8%87%AA%E9%80%82%E5%BA%94%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E5%B7%AE%E5%80%BC-Brent%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="LeetCode-142-环形链表-II"><a href="#LeetCode-142-环形链表-II" class="headerlink" title="LeetCode 142.环形链表 II"></a><a href="https://leetcode.cn/problems/linked-list-cycle-ii/description/">LeetCode 142.环形链表 II</a></h1><span id="more"></span>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。</p>
+<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p>
+<p>不允许修改 链表。<br>示例 1：</p>
+<p><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" alt="图1"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [3,2,0,-4], pos = 1</span><br><span class="line">输出：返回索引为 1 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第二个节点。</span><br></pre></td></tr></table></figure>
+<p>示例 2：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" alt="图2"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1,2], pos = 0</span><br><span class="line">输出：返回索引为 0 的链表节点</span><br><span class="line">解释：链表中有一个环，其尾部连接到第一个节点。</span><br></pre></td></tr></table></figure>
+<p>示例 3：<br><img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" alt="图3"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：head = [1], pos = -1</span><br><span class="line">输出：返回 null</span><br><span class="line">解释：链表中没有环。</span><br></pre></td></tr></table></figure>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>本题分为两步，判断是否有环和寻找环的入口。</p>
+<p>判断是否有环的阶段使用了非常经典的快慢指针方法，设立两个指针fast和slow，fast指针移动两格，slow指针移动一格。当它们相遇则说明有环。</p>
+<p>想象带环链表中的环是操场，其他部分是教学楼到操场的距离，如果甲乙同学同时下楼，v甲&#x3D;2v乙，那么甲乙相遇说明一定有操场，很好理解。</p>
+<p>接着寻找环的入口。</p>
+<p>设表头到环入口距离为a</p>
+<p>环入口到两指针相遇位置距离为b</p>
+<p>环长度为L</p>
+<p>相遇时慢指针走的距离为s(快指针为2s)</p>
+<p>可以得出，a+b&#x3D;s,a+b+kL&#x3D;2s（k为快指针绕环的圈数）</p>
+<p>那么2(a+b)&#x3D;a+b+kL</p>
+<p>a&#x3D;kL-b</p>
+<p>也就是从相遇点走a步相当于绕环k-1圈再走L-b步</p>
+<p>所以可以将一个指针转移回头节点，另一个指针同步从相遇点出发，两指针再相遇的位置就是环的入口。</p>
+<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode* fast=head;</span><br><span class="line">        ListNode* slow=head;</span><br><span class="line">        <span class="keyword">while</span>(fast!=<span class="literal">NULL</span>&amp;&amp;fast-&gt;next!=<span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            fast=fast-&gt;next-&gt;next;</span><br><span class="line">            slow=slow-&gt;next;</span><br><span class="line"> </span><br><span class="line">            <span class="keyword">if</span>(fast==slow)</span><br><span class="line">            &#123;</span><br><span class="line">                ListNode* temp1=fast;</span><br><span class="line">                ListNode* temp2=head;</span><br><span class="line">                <span class="keyword">while</span>(temp1!=temp2)</span><br><span class="line">                &#123;</span><br><span class="line">                    temp1=temp1-&gt;next;</span><br><span class="line">                    temp2=temp2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> temp1;</span><br><span class="line">            &#125;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="为什么快指针是慢指针的2倍速度"><a href="#为什么快指针是慢指针的2倍速度" class="headerlink" title="为什么快指针是慢指针的2倍速度"></a>为什么快指针是慢指针的2倍速度</h2><p>快指针移动两格，慢指针移动一个，这是为什么？能不能三倍速度？能不能定义自适应系数k来改进？</p>
+<p>首先证明快指针走三格，慢指针走一格不可行。举一个例子，首先假设慢指针进入环的时候，快指针与慢指针的距离为D，如果环大小L为4，D为1</p>
+<p>第一次移动：慢指针进 1，快指针进 3，新距离 (1+2)mod  4&#x3D;3(1+2)mod4&#x3D;3。</p>
+<p>第二次移动：慢指针进 1，快指针进 3，新距离 (3+2)mod  4&#x3D;1(3+2)mod4&#x3D;1。</p>
+<p>距离在 1 和 3 间循环，永不相遇。</p>
+<p>由此可见，如果 L 是偶数且 D 是奇数，则距离序列（如 D,D+2,D+4,…mod  LD,D+2,D+4,…modL) 始终为奇数，无法达到 0（偶数），导致指针循环而不相遇。</p>
+<h2 id="设置自适应系数k"><a href="#设置自适应系数k" class="headerlink" title="设置自适应系数k?"></a>设置自适应系数k?</h2><p>由于不知道链表长度，我们没办法安排一个k来进行优化，但是再判断是否有环的阶段，我们可以进行优化。</p>
+<h2 id="Brent判圈"><a href="#Brent判圈" class="headerlink" title="Brent判圈"></a>Brent判圈</h2><p>慢指针：每次移动一步</p>
+<p>快指针：初始步长为step_limit&#x3D;1，每次移动step_limit后，检查是否和慢指针相遇，如果没有相遇，step_limit*&#x3D;2，并将慢指针移动到快指针的位置，直到快指针到达链表尾（无环）或者快慢指针相遇（有环）</p>
+<p>Brent 算法通过动态步长优化了检测效率，特别是在无环或大环链表上性能更优，同时保持了 Floyd 算法的线性时间复杂度。</p>
+<h2 id="完整代码-1"><a href="#完整代码-1" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head==<span class="literal">NULL</span> || head-&gt;next==<span class="literal">NULL</span>) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"> </span><br><span class="line">        </span><br><span class="line">        ListNode* slow = head;</span><br><span class="line">        ListNode* fast = head-&gt;next;</span><br><span class="line">        <span class="type">int</span> step_limit = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> steps = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (fast!=<span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (slow == fast) &#123;</span><br><span class="line">                <span class="comment">// 计算环长度</span></span><br><span class="line">                <span class="type">int</span> cycle_len = <span class="number">1</span>;</span><br><span class="line">                ListNode* scanner = fast-&gt;next;</span><br><span class="line">                <span class="keyword">while</span> (scanner != slow) &#123;</span><br><span class="line">                    scanner = scanner-&gt;next;</span><br><span class="line">                    cycle_len++;</span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">                <span class="comment">// 寻找环入口</span></span><br><span class="line">                ListNode* ptr1 = head;</span><br><span class="line">                ListNode* ptr2 = head;</span><br><span class="line">                <span class="comment">// 先将ptr2移动环长度步数</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; cycle_len; i++) &#123;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">// 两指针同时移动直到相遇</span></span><br><span class="line">                <span class="keyword">while</span> (ptr1 != ptr2) &#123;</span><br><span class="line">                    ptr1 = ptr1-&gt;next;</span><br><span class="line">                    ptr2 = ptr2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> ptr1;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (steps == step_limit) &#123;</span><br><span class="line">                slow = fast;</span><br><span class="line">                step_limit *= <span class="number">2</span>;</span><br><span class="line">                steps = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            steps++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;  <span class="comment">// 无环</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>双指针</tag>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法训练|贪心|LeetCode122. 买卖股票的最佳时机 II</title>
+    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E8%B4%AA%E5%BF%83-LeetCode122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-II/</url>
+    <content><![CDATA[<h1 id="LeetCode-122-买卖股票的最佳时机-II"><a href="#LeetCode-122-买卖股票的最佳时机-II" class="headerlink" title="LeetCode 122. 买卖股票的最佳时机 II"></a><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/">LeetCode 122. 买卖股票的最佳时机 II</a></h1><span id="more"></span>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。</p>
+<p>在每一天，你可以决定是否购买和&#x2F;或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。</p>
+<p>返回 你能获得的 最大 利润 。<br>示例 1：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,1,5,3,6,4]</span><br><span class="line">输出：7</span><br><span class="line">解释：在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6 - 3 = 3 。</span><br><span class="line">     总利润为 4 + 3 = 7 。</span><br></pre></td></tr></table></figure>
+<p>示例 2：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [1,2,3,4,5]</span><br><span class="line">输出：4</span><br><span class="line">解释：在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     总利润为 4 。</span><br></pre></td></tr></table></figure>
+<p>示例 3：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,6,4,3,1]</span><br><span class="line">输出：0</span><br><span class="line">解释：在这种情况下, 交易无法获得正利润，所以不参与交易可以获得最大利润，最大利润为 0 。</span><br></pre></td></tr></table></figure>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>这道题的动态规划解法不赘述了，贪心解法属实有一种惊喜的感觉，建议先思考十分钟再看题解，恍然大悟其中奥妙，有种做脑筋急转弯的既视感。</p>
+<p>细致来说，这里的贪心属于分解（分层）思想。这种思想很重要，不管是自顶向下的架构原理还是笔者最近学习的计网结构，分解（分层）思想都是其中不可或缺的一环。这道题中，各位最容易想到的思路就是：一定要找到一个大的值，减去小的，但是又发现并不是最大减最小才会得到最高利润，于是又卡死了。</p>
+<p>实际上，我们可以把大的值减小的值这个思路分解一下。举示例1为例：</p>
+<p>买7出1可不可以？  不可以，因为利润是负值</p>
+<p>买7出5可不可以？  不可以，因为利润是负值</p>
+<p>其中买7出5时，<strong>可以分解</strong>，即买7出1，买1出5</p>
+<p>什么意思呢？第 i 天买入第 j 天卖出，我们完全可以看作第 i 天买入，第 i+1 天卖出，再买入，第 i+2 天卖出……</p>
+<p>那么我们就可以建一个数组，保存后一天减前一天所得的钱，然后从中进行舍弃负值</p>
+<p>比如示例1，可以建立数组：-6  4  -7  3  -2</p>
+<p>最大利润就是4+3&#x3D;7</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProfit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; prices)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; prices.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            result += <span class="built_in">max</span>(prices[i] - prices[i - <span class="number">1</span>], <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>贪心</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>背包问题</title>
     <url>/2025/09/09/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h1><p>背包问题是动态规划中非常经典的问题，主要分为以下几种类型：</p>
@@ -344,37 +375,6 @@ shareBtn.addEventListener('click', () => {
       <tags>
         <tag>动态规划</tag>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法训练|贪心|LeetCode122. 买卖股票的最佳时机 II</title>
-    <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E8%B4%AA%E5%BF%83-LeetCode122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-II/</url>
-    <content><![CDATA[<h1 id="LeetCode-122-买卖股票的最佳时机-II"><a href="#LeetCode-122-买卖股票的最佳时机-II" class="headerlink" title="LeetCode 122. 买卖股票的最佳时机 II"></a><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/">LeetCode 122. 买卖股票的最佳时机 II</a></h1><span id="more"></span>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。</p>
-<p>在每一天，你可以决定是否购买和&#x2F;或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。</p>
-<p>返回 你能获得的 最大 利润 。<br>示例 1：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,1,5,3,6,4]</span><br><span class="line">输出：7</span><br><span class="line">解释：在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6 - 3 = 3 。</span><br><span class="line">     总利润为 4 + 3 = 7 。</span><br></pre></td></tr></table></figure>
-<p>示例 2：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [1,2,3,4,5]</span><br><span class="line">输出：4</span><br><span class="line">解释：在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4 。</span><br><span class="line">     总利润为 4 。</span><br></pre></td></tr></table></figure>
-<p>示例 3：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：prices = [7,6,4,3,1]</span><br><span class="line">输出：0</span><br><span class="line">解释：在这种情况下, 交易无法获得正利润，所以不参与交易可以获得最大利润，最大利润为 0 。</span><br></pre></td></tr></table></figure>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>这道题的动态规划解法不赘述了，贪心解法属实有一种惊喜的感觉，建议先思考十分钟再看题解，恍然大悟其中奥妙，有种做脑筋急转弯的既视感。</p>
-<p>细致来说，这里的贪心属于分解（分层）思想。这种思想很重要，不管是自顶向下的架构原理还是笔者最近学习的计网结构，分解（分层）思想都是其中不可或缺的一环。这道题中，各位最容易想到的思路就是：一定要找到一个大的值，减去小的，但是又发现并不是最大减最小才会得到最高利润，于是又卡死了。</p>
-<p>实际上，我们可以把大的值减小的值这个思路分解一下。举示例1为例：</p>
-<p>买7出1可不可以？  不可以，因为利润是负值</p>
-<p>买7出5可不可以？  不可以，因为利润是负值</p>
-<p>其中买7出5时，<strong>可以分解</strong>，即买7出1，买1出5</p>
-<p>什么意思呢？第 i 天买入第 j 天卖出，我们完全可以看作第 i 天买入，第 i+1 天卖出，再买入，第 i+2 天卖出……</p>
-<p>那么我们就可以建一个数组，保存后一天减前一天所得的钱，然后从中进行舍弃负值</p>
-<p>比如示例1，可以建立数组：-6  4  -7  3  -2</p>
-<p>最大利润就是4+3&#x3D;7</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProfit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; prices)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; prices.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            result += <span class="built_in">max</span>(prices[i] - prices[i - <span class="number">1</span>], <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>算法训练</tag>
-        <tag>贪心</tag>
       </tags>
   </entry>
 </search>
