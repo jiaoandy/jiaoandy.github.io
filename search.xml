@@ -50,6 +50,9 @@ shareBtn.addEventListener('click', () => {
       <categories>
         <category>公告</category>
       </categories>
+      <tags>
+        <tag>公告</tag>
+      </tags>
   </entry>
   <entry>
     <title>排序算法</title>
@@ -384,6 +387,46 @@ shareBtn.addEventListener('click', () => {
       <tags>
         <tag>动态规划</tag>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法训练|AT_chokudai_S001_h LIS|LIS|单调栈+DP与DP两种方法</title>
+    <url>/2025/09/28/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-AT-chokudai-S001-h-LIS-LIS-%E5%8D%95%E8%B0%83%E6%A0%88-DP%E4%B8%8EDP%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="题目：AT-chokudai-S001-h-LIS"><a href="#题目：AT-chokudai-S001-h-LIS" class="headerlink" title="题目：AT_chokudai_S001_h LIS"></a>题目：<a href="https://www.luogu.com.cn/problem/AT_chokudai_S001_h">AT_chokudai_S001_h LIS</a></h1><span id="more"></span>
+<h1 id="AT-chokudai-S001-h-LIS"><a href="#AT-chokudai-S001-h-LIS" class="headerlink" title="AT_chokudai_S001_h LIS"></a>AT_chokudai_S001_h LIS</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>从数列 $a$ 中任意删除若干个整数，构造一个单调递增的数列。请你求出该单调递增数列的最大可能长度。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行一个整数 $N$，表示数列的长度。</p>
+<p>第二行包含 $N$ 个整数 $a_1, a_2, \ldots, a_N$，表示给定的数列。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出一个整数，表示可以得到的最长单调递增子序列的长度。</p>
+<h2 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例 #1"></a>输入输出样例 #1</h2><h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入 #1"></a>输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5</span><br><span class="line">3 1 5 4 2</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出 #1"></a>输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出样例-2"><a href="#输入输出样例-2" class="headerlink" title="输入输出样例 #2"></a>输入输出样例 #2</h2><h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入 #2"></a>输入 #2</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6</span><br><span class="line">1 2 3 4 5 6</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出 #2"></a>输出 #2</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6</span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出样例-3"><a href="#输入输出样例-3" class="headerlink" title="输入输出样例 #3"></a>输入输出样例 #3</h2><h3 id="输入-3"><a href="#输入-3" class="headerlink" title="输入 #3"></a>输入 #3</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7</span><br><span class="line">7 6 5 4 3 2 1</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-3"><a href="#输出-3" class="headerlink" title="输出 #3"></a>输出 #3</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出样例-4"><a href="#输入输出样例-4" class="headerlink" title="输入输出样例 #4"></a>输入输出样例 #4</h2><h3 id="输入-4"><a href="#输入-4" class="headerlink" title="输入 #4"></a>输入 #4</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">20</span><br><span class="line">19 11 10 7 8 9 17 18 20 4 3 15 16 1 5 14 6 2 13 12</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-4"><a href="#输出-4" class="headerlink" title="输出 #4"></a>输出 #4</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6</span><br></pre></td></tr></table></figure>
+
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h2><h3 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h3><ul>
+<li>$1 \leq N \leq 100,!000$</li>
+</ul>
+<h1 id="题目分析"><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h1><h2 id="本题为标准的LIS（最长上升子序列）模板题"><a href="#本题为标准的LIS（最长上升子序列）模板题" class="headerlink" title="本题为标准的LIS（最长上升子序列）模板题"></a>本题为标准的LIS（最长上升子序列）模板题</h2><h3 id="方法一：DP"><a href="#方法一：DP" class="headerlink" title="方法一：DP"></a>方法一：DP</h3><p>与大部分线性DP思路相同，定义状态dp[i]为以第i个元素结尾的最长上升子序列的长度，那么状态转移方程为：</p>
+<p>$$<br>dp[i] &#x3D; \max_{j&#x3D;1}^{i-1} {dp[j]} + 1, \text{if } a[j] &lt; a[i]<br>$$</p>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>动态规划</tag>
+        <tag>单调栈</tag>
+        <tag>LIS</tag>
       </tags>
   </entry>
 </search>
