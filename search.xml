@@ -6,7 +6,7 @@
     <content><![CDATA[<p>欢迎来到我的博客，这里会不定时分享一些题解，并存放一些我的生活碎片，谢谢支持！</p>
 <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是谁？<br>一名吉林大学软件工程专业的23级普通学生，致力于提升自己技术水平，将分享不同OJ的题解，机器学习相关内容。<br>有时候也会有一些生活上的分享哦！</p>
 <h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
-<li>邮箱：<a href="mailto:&#x6a;&#x69;&#x61;&#x6f;&#x79;&#99;&#53;&#53;&#x32;&#x33;&#x40;&#x6d;&#97;&#x69;&#x6c;&#115;&#x2e;&#106;&#108;&#117;&#46;&#101;&#x64;&#x75;&#46;&#99;&#x6e;">jiaoyc5523@mails.jlu.edu.cn</a></li>
+<li>邮箱：<a href="mailto:&#x6a;&#105;&#x61;&#111;&#121;&#x63;&#x35;&#x35;&#x32;&#51;&#x40;&#109;&#x61;&#105;&#108;&#x73;&#x2e;&#106;&#x6c;&#x75;&#x2e;&#x65;&#x64;&#x75;&#46;&#x63;&#x6e;">jiaoyc5523@mails.jlu.edu.cn</a></li>
 <li>csdn: <a href="https://blog.csdn.net/2302_76409391?spm=1000.2115.3001.5343">个人主页</a></li>
 <li>QQ: 197566706</li>
 </ul>
@@ -53,6 +53,18 @@ shareBtn.addEventListener('click', () => {
       <tags>
         <tag>公告</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>单一职责原则</title>
+    <url>/2025/09/30/%E5%8D%95%E4%B8%80%E8%81%8C%E8%B4%A3%E5%8E%9F%E5%88%99/</url>
+    <content><![CDATA[<h1 id="单一职责原则（Single-Responsibility-Principle）（SRP）"><a href="#单一职责原则（Single-Responsibility-Principle）（SRP）" class="headerlink" title="单一职责原则（Single Responsibility Principle）（SRP）"></a>单一职责原则（Single Responsibility Principle）（SRP）</h1><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>单一职责原则指一个类或一个模块有且只有一个引起它变化的原因，即一个类或一个模块只负责一项职责。</p>
+<h3 id="构建原则"><a href="#构建原则" class="headerlink" title="构建原则"></a>构建原则</h3><pre><code>1.每个类的职责有明确目标
+2.在修改某一个类时不会影响其他类的功能
+</code></pre>
+<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><pre><code>1.类的职责单一，功能明确，易于理解和维护
+2.类的变化引起的影响范围小，减少了系统的耦合度
+</code></pre>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
   </entry>
   <entry>
     <title>已接入阅读次数功能！</title>
@@ -105,6 +117,39 @@ shareBtn.addEventListener('click', () => {
 ]]></content>
   </entry>
   <entry>
+    <title>滑动窗口算法</title>
+    <url>/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="滑动窗口算法"><a href="#滑动窗口算法" class="headerlink" title="滑动窗口算法"></a>滑动窗口算法</h1><p>先给一道例题：<a href="/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-LeetCode-209-%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/" title="算法训练|LeetCode 209. 长度最小的子数组">LeetCode-209-长度最小的子数组题解</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>算法总结</title>
+    <url>/2025/09/08/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="算法总结"><a href="#算法总结" class="headerlink" title="算法总结"></a>算法总结</h1><h5 id="写在前面的话："><a href="#写在前面的话：" class="headerlink" title="写在前面的话："></a>写在前面的话：</h5><p>本文从2025年9月8日开始，总结自己的算法训练经验，分享自己的算法训练心得。将会持续更新。<br>希望能对大家有所帮助。</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>数组是最常用的数据结构之一，掌握数组的基本操作和常见算法是非常重要的。以下是一些常见的数组算法：</p>
+<ol>
+<li><a href="/2025/09/08/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法">排序算法</a>：快速排序、归并排序、堆排序</li>
+<li><a href="/2025/09/08/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/" title="搜索算法">搜索算法</a>：二分搜索</li>
+<li><a href="/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/" title="滑动窗口算法">滑动窗口算法</a>：用于解决子数组或子字符串问题，如最长无重复字符的子串、最小覆盖子串等</li>
+</ol>
+<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><p>链表是一种常见的数据结构，掌握链表的基本操作和常见<br>算法是非常重要的。以下是一些常见的链表算法：<br>……</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>字符串是一种常见的数据结构，掌握字符串的基本操作和常见<br>算法是非常重要的。以下是一些常见的字符串算法：<br>……</p>
+<h2 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h2><p>栈和队列是两种常见的数据结构，掌握栈和队列的基本操作和常见<br>算法是非常重要的。以下是一些常见的栈和队列算法：<br>……</p>
+<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树是一种常见的数据结构，掌握树的基本操作和常见<br>算法是非常重要的。以下是一些常见的树算法：<br>……</p>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><p>图是一种常见的数据结构，掌握图的基本操作和常见<br>算法是非常重要的。以下是一些常见的图算法：<br>……</p>
+<h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><ol>
+<li><a href="/2025/09/09/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="背包问题">背包问题</a>：01背包，完全背包，多重背包及其优化，分组背包</li>
+</ol>
+]]></content>
+      <categories>
+        <category>常见算法总结（持续更新）</category>
+      </categories>
+      <tags>
+        <tag>算法训练</tag>
+        <tag>总结</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法训练|AT_chokudai_S001_h LIS|LIS|单调栈+DP与DP两种方法</title>
     <url>/2025/09/28/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-AT-chokudai-S001-h-LIS-LIS-%E5%8D%95%E8%B0%83%E6%A0%88-DP%E4%B8%8EDP%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="题目：AT-chokudai-S001-h-LIS"><a href="#题目：AT-chokudai-S001-h-LIS" class="headerlink" title="题目：AT_chokudai_S001_h LIS"></a>题目：<a href="https://www.luogu.com.cn/problem/AT_chokudai_S001_h">AT_chokudai_S001_h LIS</a></h1><span id="more"></span>
@@ -155,12 +200,6 @@ shareBtn.addEventListener('click', () => {
         <tag>单调栈</tag>
         <tag>LIS</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>滑动窗口算法</title>
-    <url>/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="滑动窗口算法"><a href="#滑动窗口算法" class="headerlink" title="滑动窗口算法"></a>滑动窗口算法</h1><p>先给一道例题：<a href="/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-LeetCode-209-%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/" title="算法训练|LeetCode 209. 长度最小的子数组">LeetCode-209-长度最小的子数组题解</a></p>
-]]></content>
   </entry>
   <entry>
     <title>算法训练|LeetCode 142. 环形链表 II（Floyd判圈）|能否用系数k自适应快慢指针差值|Brent方法</title>
@@ -253,33 +292,6 @@ shareBtn.addEventListener('click', () => {
       </tags>
   </entry>
   <entry>
-    <title>算法总结</title>
-    <url>/2025/09/08/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="算法总结"><a href="#算法总结" class="headerlink" title="算法总结"></a>算法总结</h1><h5 id="写在前面的话："><a href="#写在前面的话：" class="headerlink" title="写在前面的话："></a>写在前面的话：</h5><p>本文从2025年9月8日开始，总结自己的算法训练经验，分享自己的算法训练心得。将会持续更新。<br>希望能对大家有所帮助。</p>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>数组是最常用的数据结构之一，掌握数组的基本操作和常见算法是非常重要的。以下是一些常见的数组算法：</p>
-<ol>
-<li><a href="/2025/09/08/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法">排序算法</a>：快速排序、归并排序、堆排序</li>
-<li><a href="/2025/09/08/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/" title="搜索算法">搜索算法</a>：二分搜索</li>
-<li><a href="/2025/09/08/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/" title="滑动窗口算法">滑动窗口算法</a>：用于解决子数组或子字符串问题，如最长无重复字符的子串、最小覆盖子串等</li>
-</ol>
-<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><p>链表是一种常见的数据结构，掌握链表的基本操作和常见<br>算法是非常重要的。以下是一些常见的链表算法：<br>……</p>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>字符串是一种常见的数据结构，掌握字符串的基本操作和常见<br>算法是非常重要的。以下是一些常见的字符串算法：<br>……</p>
-<h2 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h2><p>栈和队列是两种常见的数据结构，掌握栈和队列的基本操作和常见<br>算法是非常重要的。以下是一些常见的栈和队列算法：<br>……</p>
-<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树是一种常见的数据结构，掌握树的基本操作和常见<br>算法是非常重要的。以下是一些常见的树算法：<br>……</p>
-<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><p>图是一种常见的数据结构，掌握图的基本操作和常见<br>算法是非常重要的。以下是一些常见的图算法：<br>……</p>
-<h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><ol>
-<li><a href="/2025/09/09/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="背包问题">背包问题</a>：01背包，完全背包，多重背包及其优化，分组背包</li>
-</ol>
-]]></content>
-      <categories>
-        <category>常见算法总结（持续更新）</category>
-      </categories>
-      <tags>
-        <tag>算法训练</tag>
-        <tag>总结</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法训练|离散化|区间和（前缀和）</title>
     <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E7%A6%BB%E6%95%A3%E5%8C%96-%E5%8C%BA%E9%97%B4%E5%92%8C%EF%BC%88%E5%89%8D%E7%BC%80%E5%92%8C%EF%BC%89/</url>
     <content><![CDATA[<h1 id="题目：区间和"><a href="#题目：区间和" class="headerlink" title="题目：区间和"></a>题目：区间和</h1><p>原题链接：<a href="https://www.acwing.com/file_system/file/content/whole/index/content/4330/">802. 区间和 - AcWing题库</a> </p>
@@ -344,6 +356,25 @@ shareBtn.addEventListener('click', () => {
       </tags>
   </entry>
   <entry>
+    <title>软件设计模式</title>
+    <url>/2025/09/30/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="软件设计模式学习笔记"><a href="#软件设计模式学习笔记" class="headerlink" title="软件设计模式学习笔记"></a>软件设计模式学习笔记</h1><p>最近在学习软件设计模式，本来以为这是一门比较简单的课程，但是在做第一章的作业时，感到非常吃力（😓），遂决定记一下笔记帮助学习这门实际上非常重要的课程。</p>
+<h5 id="本笔记主要参考《大话设计模式》解读、菜鸟教程。"><a href="#本笔记主要参考《大话设计模式》解读、菜鸟教程。" class="headerlink" title="本笔记主要参考《大话设计模式》解读、菜鸟教程。"></a>本笔记主要参考<a href="https://datawhalechina.github.io/sweetalk-design-pattern/#/">《大话设计模式》解读</a>、<a href="https://www.runoob.com/design-pattern/design-pattern-tutorial.html">菜鸟教程</a>。</h5><h6 id="另：Java在设计模式中是一门重要的语言，但由于博主并没有学习过Java，所以本笔记主要用C-实现，过一段时间会出一份Java笔记，并补充Java实现。"><a href="#另：Java在设计模式中是一门重要的语言，但由于博主并没有学习过Java，所以本笔记主要用C-实现，过一段时间会出一份Java笔记，并补充Java实现。" class="headerlink" title="另：Java在设计模式中是一门重要的语言，但由于博主并没有学习过Java，所以本笔记主要用C++实现，过一段时间会出一份Java笔记，并补充Java实现。"></a>另：Java在设计模式中是一门重要的语言，但由于博主并没有学习过Java，所以本笔记主要用C++实现，过一段时间会出一份Java笔记，并补充Java实现。</h6><h2 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h2><pre><code>设计模式有四大基本要素：
+ 1.模式名称：每个设计模式都有一个唯一的名称，用于标识该模式。
+ 2.问题：描述了设计模式解决的问题。
+ 3.解决方案：描述了设计模式的解决方案，包括类图、时序图等。
+ 4.效果：描述了设计模式的效果，包括优点、缺点等。
+而我们在记忆设计原则时，可以从这四个方面记忆。
+</code></pre>
+<h2 id="在正文之前，建议先阅读。"><a href="#在正文之前，建议先阅读。" class="headerlink" title="在正文之前，建议先阅读。"></a>在正文之前，建议先阅读<a href="/2025/09/30/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%89%8D%E8%A8%80/" title="软件设计模式前言">软件设计模式前言 前言</a>。</h2>]]></content>
+      <categories>
+        <category>软件设计模式</category>
+      </categories>
+      <tags>
+        <tag>软件设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法训练|贪心|LeetCode122. 买卖股票的最佳时机 II</title>
     <url>/2025/09/07/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83-%E8%B4%AA%E5%BF%83-LeetCode122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-II/</url>
     <content><![CDATA[<h1 id="LeetCode-122-买卖股票的最佳时机-II"><a href="#LeetCode-122-买卖股票的最佳时机-II" class="headerlink" title="LeetCode 122. 买卖股票的最佳时机 II"></a><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/">LeetCode 122. 买卖股票的最佳时机 II</a></h1><span id="more"></span>
@@ -373,6 +404,74 @@ shareBtn.addEventListener('click', () => {
         <tag>算法训练</tag>
         <tag>贪心</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>软件设计模式前言</title>
+    <url>/2025/09/30/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%89%8D%E8%A8%80/</url>
+    <content><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>在学习之前，我会介绍一些名词。由于本人学习面向对象程序设计已经是一年前的了，所以在介绍的过程中，我会从一个初学者的角度介绍，尽可能有所帮助</p>
+<p>-接口：对象内部是被_封装_的，客户只能通过对象的方法来访问或操作对象内部的数据，对象本身对外部不可见。而所有的操作只能通过接口来进行。</p>
+<p>-类型：标识特定接口的一个名字。一个对象可以有许多给类型，不同对象也可以共享同一个类型。当A类型的接口包含类B型的接口时，我们称A类型为B类型的<strong>子类型</strong>，B类型为A类型的<strong>超类型</strong>。子类型继承了超类型的接口。</p>
+<p>-动态绑定：在运行时根据对象的实际类型来确定调用的方法，而不是在编译时确定，发送给对象的请求和它的相应操作在运行时刻的连接称为<strong>动态绑定</strong>。</p>
+<p>-多态：动态绑定允许客户在运行时彼此替换有相同接口的对象，这种可替换性称为<strong>多态</strong>。多态使对象之间能够彼此独立，并可在运行时动态改变它们之间的关系。</p>
+<p>-抽象类：只能被继承，不能被实例化。它被创造的主要目的就是为它的子类定义公共接口。在抽象类中定义却没有实现的操作称为<strong>抽象操作</strong>。非抽象类被称为<strong>具体类</strong>。</p>
+<h2 id="1-整个软件设计模式共有23种，如此多的模式，必定有其中的类别。"><a href="#1-整个软件设计模式共有23种，如此多的模式，必定有其中的类别。" class="headerlink" title="1. 整个软件设计模式共有23种，如此多的模式，必定有其中的类别。"></a>1. 整个软件设计模式共有23种，如此多的模式，必定有其中的类别。</h2><p>设计模式在抽象层次和粒度方面有不同，可以从两个方向分类：<strong>以目的为准则</strong>、<strong>以范围为准则</strong>。</p>
+<h4 id="以目的为准则"><a href="#以目的为准则" class="headerlink" title="以目的为准则"></a>以目的为准则</h4><p>即模式是用什么完成工作的，可以分为_创建型模式_、<em>结构型模式</em>、<em>行为型模式</em>。</p>
+<p> -<strong>创建型模式</strong>关注对象的创建过程，包括_工厂方法模式_、<em>抽象工厂模式</em>、<em>单例模式</em>、<em>建造者模式</em>、<em>原型模式</em>。（5种）<br> -<strong>结构型模式</strong>关注类或对象的组合方式，包括_适配器模式_、<em>桥接模式</em>、<em>组合模式</em>、<em>装饰器模式</em>、<em>外观模式</em>、<em>享元模式</em>、<em>代理模式</em>。（7种）</p>
+<p> -<strong>行为型模式</strong>关注对象之间的通信方式，包括_责任链模式_、<em>命令模式</em>、<em>解释器模式</em>、<em>迭代器模式</em>、<em>中介者模式</em>、<em>备忘录模式</em>、<em>观察者模式</em>、<em>状态模式</em>、<em>策略模式</em>、<em>模板方法模式</em>、<em>访问者模式</em>。（11种）</p>
+<h4 id="以范围为准则"><a href="#以范围为准则" class="headerlink" title="以范围为准则"></a>以范围为准则</h4><p>即模式主要用于_类_还是_对象_。<br>类模式处理类和子类之间的关系，通过继承建立，是静态的。<br>对象模式处理对象之间的关系，通过组合建立，是动态的。</p>
+<p>但是，由于大部分模式都使用继承机制，所以大部分模式都属于对象模式</p>
+<p>同时，有一些模式经常绑在一起使用，所以并不是说只能使用其中的一种模式。</p>
+<p><img src="/images/image%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%A1%A81-1.png" alt="表1-1"></p>
+<p>(from 设计模式（第2版）  Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides)</p>
+<h2 id="2-所以为什么要学习设计模式？他能解决什么问题？"><a href="#2-所以为什么要学习设计模式？他能解决什么问题？" class="headerlink" title="2. 所以为什么要学习设计模式？他能解决什么问题？"></a>2. 所以为什么要学习设计模式？他能解决什么问题？</h2><p>我们都知道，面向对象程序由对象组成，对象包括数据和对数据进行操作的过程，这个过程通常被称为<strong>方法</strong>或<strong>操作</strong>。而对象在收到客户的请求后，会根据请求调用相应的方法，完成客户的需求。</p>
+<p>在进行面向对象设计时，最令人头疼的问题就是如何将对象的内部数据和方法组织起来，使得对象可以被正确地使用，而通过恰当的设计模式，在设计的过程中进行分析，会使设计更为灵活，复用性更好。</p>
+<p>当我们在在设计过程中，会遇到一些问题，下面给出一些常见问题以及解决这些问题的设计模式：</p>
+<ol>
+<li><strong>通过显式地指定一个类来创建对象</strong><br> 在创建对象时应该受特定接口的约束，而非特定实现的约束，否则未来变化会更复杂。我们可以间接地创建对象。<br> <em>解决：Abstract Factory(抽象工厂模式)、Factory Method(工厂方法模式)、Prototype(原型模式)。</em></li>
+<li><strong>对特殊操作的依赖</strong><br> 当请求指定特殊操作时，完成该请求的操作会固定下来，会把代码写死。应该在运行时改变响应请求的方法。<br> <em>解决：Command(命令模式)、Chain of Responsibility(责任链模式)。</em></li>
+<li><strong>对硬件和软件平台的依赖</strong><br> 设计时限制平台的相关性，以免依赖于特定平台软件。<br> <em>解决：Abstract Factory(抽象工厂模式)、Bridge(桥接模式)。</em></li>
+<li><strong>对对象表示或实现的依赖</strong><br> 知道对象怎样表示、保存、定位或实现的客户在对象发生变化时可能也需要变化，应该对客户隐藏这些信息。<br> <em>解决：Abstract Factory(抽象工厂模式)、Bridge(桥接模式)、Memento(备忘录模式)、Proxy(代理模式)。</em></li>
+<li><strong>对算法的依赖</strong><br> 针对有可能发生变化的算法应该被孤立起来。<br> <em>解决：Builder(建造者模式)、Strategy(策略模式)、Template Method(模板方法模式)、Visitor(访问者模式)、Iterator(迭代器模式)。</em></li>
+<li><strong>紧耦合</strong><br> 紧耦合的类很难独立地被复用，如果要改变一个类，则必须改变其他很多类。应该用抽象耦合和分层技术来提高系统松散耦合性。<br> <em>解决：Abstract Factory(抽象工厂模式)、Chain of Responsibility(责任链模式)、Command(命令模式)、Mediator(中介者模式)、Observer(观察者模式)。</em></li>
+<li><strong>通过生成子类来扩充功能</strong><br> 不能通过子类来定制对象，如果定义子类，还需要对父类有深入了解。一般的对象组合技术和具体的委托技术，是继承之外组合对象行为的另一种灵活方法。你可以定义一个子类，且将它的实例和已存在的实例进行组合来引入定制的功能。<br> <em>解决：Bridge(桥接模式)、Decorator(装饰器模式)、Chain of Responsibility(责任链模式)、Composite(组合模式)、Observer(观察者模式)、Strategy(策略模式)。</em></li>
+<li><strong>不能方便地对类进行修改</strong><br> 不得不改变一个难以修改的类，或需要源代码却没有，或可能对类的任何该百年会影响许多已存在的其他子类。<br> <em>解决：Adapter(适配器模式)、Decorator(装饰器模式)、Visitor(访问者模式)。</em></li>
+</ol>
+<h2 id="3-选择设计模式"><a href="#3-选择设计模式" class="headerlink" title="3.选择设计模式"></a>3.选择设计模式</h2><ol>
+<li><p>根据上述列表，考虑什么设计模式能够解决这种问题</p>
+</li>
+<li><p>浏览模式的意图部分，如下：<br> Abstract Factory(3.1)：提供创建一系列相关 &#x2F; 相互依赖对象的接口，无需指定具体类。</p>
+<p> Adapter(4.1)：将一类接口转换为客户期望的另一接口，解决接口不兼容类的协同问题。</p>
+<p> Bridge(4.2)：分离抽象与实现部分，使两者可独立变化。</p>
+<p> Builder(3.2)：分离复杂对象的构建与表示，让同一构建过程能创建不同表示。</p>
+<p> Chain of Responsibility(5.1)：解除请求发送者与接收者的耦合，将对象连成链传递请求，直到有对象处理。</p>
+<p> Command(5.2)：将请求封装为对象，支持请求参数化、排队、日志记录与撤销操作。</p>
+<p> Composite(4.3)：将对象组合成 “部分 - 整体” 树形结构，使客户对单个 &#x2F; 复合对象的使用一致。</p>
+<p> Decorator(4.4)：动态给对象添加额外职责，扩展功能比生成子类更灵活。</p>
+<p> Facade(4.5)：为子系统一组接口提供一致高层界面，简化子系统使用。</p>
+<p> Factory Method(3.3)：定义创建对象的接口，由子类决定实例化哪个类，延迟类的实例化到子类。</p>
+<p> Flyweight(4.6)：用共享技术有效支持大量细粒度对象。</p>
+<p> Interpreter(5.3)：给定语言，定义其文法表示与解释器，用该表示解释语言句子。</p>
+<p> Iterator(5.4)：提供顺序访问聚合对象元素的方法，不暴露对象内部表示。</p>
+<p> Mediator(5.5)：用中介对象封装对象间交互，解耦对象，使交互可独立变化。</p>
+<p> Memento(5.6)：不破坏封装性的前提下，捕获并外部保存对象内部状态，以便后续恢复。</p>
+<p> Observer(5.7)：定义对象间一对多依赖关系，一个对象状态改变时，依赖它的对象都能收到通知并刷新。</p>
+<p> Prototype(3.4)：用原型实例指定创建对象的种类，通过拷贝原型创建新对象。</p>
+<p> Proxy(4.7)：为其他对象提供代理，控制对该对象的访问。</p>
+<p> Singleton(3.5)：保证类仅有一个实例，并提供全局访问点。</p>
+<p> State(5.8)：允许对象内部状态改变时改变行为，对象看似修改了所属类。</p>
+<p> Strategy(5.9)：定义一系列可相互替换的算法并封装，使算法变化独立于使用它的客户。</p>
+<p> Template Method(5.10)：定义操作算法的骨架，将部分步骤延迟到子类，子类可在不改变算法结构的前提下重定义特定步骤。</p>
+<p> Visitor(5.11)：表示作用于对象结构中各元素的操作，可在不改变元素类的前提下定义新操作。</p>
+</li>
+</ol>
+<p>(from 设计模式：可复用面向对象软件的基础 P6,括号内为书中对应章节)</p>
+<ol start="3">
+<li>研究模式怎样互相关联<br><img src="/images/image%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%9B%BE1-1.png" alt="图1-1"></li>
+<li>研究目的相似的模式</li>
+<li>考虑设计中的可变量<br> 这个时候考虑到并非重新设计，而是怎样变化不会引起重新设计，最重要的是<strong>封装变化的概念</strong>。下表列出设计模式允许你独立变化的方面。<br><img src="/images/image%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%A1%A81-2.png" alt="表1-2"></li>
+</ol>
+<p>接下来开始准备学习具体的设计模式。</p>
+]]></content>
   </entry>
   <entry>
     <title>背包问题</title>
